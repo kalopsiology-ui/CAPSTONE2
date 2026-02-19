@@ -1,0 +1,50 @@
+{
+  "name": "gubat-resilient-housing",
+  "version": "1.0.0",
+  "description": "A comprehensive guide for resilient housing in Gubat, providing personalized material recommendations based on location and hazards",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html",
+    "dev": "live-server --port=3000 --open=index.html --watch=css,js,data",
+    "build": "echo 'Build process complete - files are ready for deployment'",
+    "serve": "python -m http.server 8080 || python3 -m http.server 8080",
+    "validate": "echo 'Validating JSON files...' && node -e \"try { JSON.parse(require('fs').readFileSync('data/barangays.json', 'utf8')); console.log('✓ barangays.json is valid'); } catch(e) { console.error('✗ barangays.json is invalid:', e.message); process.exit(1); }\" && node -e \"try { JSON.parse(require('fs').readFileSync('data/hazards.json', 'utf8')); console.log('✓ hazards.json is valid'); } catch(e) { console.error('✗ hazards.json is invalid:', e.message); process.exit(1); }\" && node -e \"try { JSON.parse(require('fs').readFileSync('data/materials.json', 'utf8')); console.log('✓ materials.json is valid'); } catch(e) { console.error('✗ materials.json is invalid:', e.message); process.exit(1); }\"",
+    "lint": "echo 'Linting JavaScript files...' && eslint js/ || echo 'ESLint not available - install with: npm install -g eslint'",
+    "format": "echo 'Formatting code...' && prettier --write js/ css/ || echo 'Prettier not available - install with: npm install -g prettier'",
+    "test": "echo 'Running tests...' && npm run validate"
+  },
+  "keywords": [
+    "resilient-housing",
+    "disaster-risk-reduction",
+    "construction",
+    "materials",
+    "hazards",
+    "gubat",
+    "philippines",
+    "safety",
+    "building-guide"
+  ],
+  "author": "Gubat Resilient Housing Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gubat-resilient-housing/gubat-resilient-housing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gubat-resilient-housing/gubat-resilient-housing/issues"
+  },
+  "homepage": "https://github.com/gubat-resilient-housing/gubat-resilient-housing#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

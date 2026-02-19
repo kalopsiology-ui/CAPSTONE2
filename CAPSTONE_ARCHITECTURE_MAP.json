@@ -1,0 +1,504 @@
+{
+  "projectName": "Gubat Resilient Housing Guide",
+  "version": "1.0.0",
+  "purpose": "A comprehensive web-based guide for resilient housing in Gubat, Philippines",
+  "architecture": {
+    "root": {
+      "index.html": {
+        "description": "Main application entry point",
+        "size": "~6000 lines",
+        "sections": {
+          "head": {
+            "meta": "Responsive viewport, SEO, charset UTF-8",
+            "stylesheets": ["css/styles.css"],
+            "scripts": ["data/articles.js"]
+          },
+          "body": {
+            "navbar": {
+              "features": ["Logo", "Navigation Links", "About Button"],
+              "components": ["Home", "Building Guide", "Barangay Directory", "Learn & Articles"]
+            },
+            "heroSection": {
+              "type": "Animated Carousel Background",
+              "images": 6,
+              "duration": "10 seconds per image",
+              "animation": "Fade in/out transitions",
+              "z-index": "0 (background)",
+              "images_used": [
+                "QFIsp3V.jpg",
+                "abSZ2J7.jpg",
+                "tKmsAAa.jpg",
+                "V4hg9E9.jpg",
+                "pmcqfsn.jpg",
+                "uF1HGSn.jpg"
+              ]
+            },
+            "mainContent": {
+              "sections": [
+                {
+                  "name": "Home",
+                  "id": "home",
+                  "components": ["Welcome message", "CTA Button", "Key features"]
+                },
+                {
+                  "name": "Building Guide - Step 1",
+                  "id": "step1",
+                  "feature": "Area Type Selection",
+                  "options": ["Coastal", "Rural", "Urban", "Upland"],
+                  "images": "4 preview images from Unsplash"
+                },
+                {
+                  "name": "Building Guide - Step 2",
+                  "id": "step2",
+                  "feature": "Barangay Selection",
+                  "logic": "Dynamic filtering based on Step 1 selection",
+                  "barangays": "42 total in system"
+                },
+                {
+                  "name": "Building Guide - Step 3",
+                  "id": "step3",
+                  "feature": "Hazard Selection",
+                  "logic": "Pre-populated based on barangay data"
+                },
+                {
+                  "name": "Building Guide - Step 4",
+                  "id": "step4",
+                  "feature": "Material Recommendations",
+                  "components": ["Foundation", "Roof", "Walls", "Windows", "Doors", "Seismic Bracing"],
+                  "materials": 6,
+                  "images": "Each material type has featured image"
+                },
+                {
+                  "name": "Barangay Directory",
+                  "id": "directory",
+                  "feature": "Reference all 42 barangays",
+                  "data_source": "barangays.json"
+                },
+                {
+                  "name": "Learn & Articles",
+                  "id": "articles",
+                  "feature": "Educational content",
+                  "data_source": ["articles.js (primary)", "articles.json (fallback)"]
+                },
+                {
+                  "name": "About Team",
+                  "id": "about",
+                  "feature": "Team member profiles with modals",
+                  "teams": 6,
+                  "modal_type": "Clickable cards with popup information"
+                }
+              ]
+            },
+            "footer": {
+              "content": ["Contact info", "Social links", "Copyright"]
+            }
+          }
+        },
+        "jsFeatures": {
+          "carousel": {
+            "function": "rotateCarousel()",
+            "interval": "10000 ms",
+            "animation": "1000 ms fade transition",
+            "imagePreload": "Browser caches all 6 images on load"
+          },
+          "dataManagement": {
+            "loadArticles": "Primary: window.articlesData from articles.js | Fallback: fetch articles.json",
+            "loadBarangays": "fetch barangays.json",
+            "loadHazards": "fetch hazards.json",
+            "loadMaterials": "fetch materials.json"
+          },
+          "stepNavigation": {
+            "nextStep": "Validates input and shows next step",
+            "previousStep": "Goes back to previous step",
+            "submitGuide": "Calculates recommendations based on selections"
+          },
+          "eventHandlers": [
+            "Area type selection",
+            "Barangay filtering",
+            "Hazard checkbox toggles",
+            "Modal open/close",
+            "Step navigation buttons"
+          ]
+        }
+      },
+      "css": {
+        "styles.css": {
+          "description": "All styling for the application",
+          "size": "~3200 lines",
+          "sections": {
+            "global": ["Reset styles", "Typography", "Color scheme", "Spacing"],
+            "navbar": ["Navigation bar styling", "Logo", "Links", "Responsiveness"],
+            "hero": [
+              ".hero-section styling",
+              ".hero-background (z-index: 0)",
+              ".hero-overlay (z-index: 1)",
+              "Content overlay (z-index: 2)",
+              ".carouselFadeIn animation",
+              ".carouselFadeOut animation"
+            ],
+            "stepGuide": [
+              ".step-container",
+              ".step-content",
+              ".step-button styles",
+              "Active/inactive step states"
+            ],
+            "materials": [
+              ".material-card",
+              ".material-image",
+              ".material-pros-cons",
+              "Material selection highlights"
+            ],
+            "modals": [
+              ".modal styling",
+              ".modal-backdrop (z-index: 2000)",
+              ".team-modal specific styles",
+              "Slide-up animation",
+              "Hover effects"
+            ],
+            "responsiveness": [
+              "Mobile breakpoints",
+              "Tablet breakpoints",
+              "Desktop optimizations"
+            ]
+          },
+          "animations": {
+            "carouselFadeIn": "1s ease-in-out from opacity 0 to 1",
+            "carouselFadeOut": "1s ease-in-out from opacity 1 to 0",
+            "slideUp": "Modal entrance animation",
+            "rotate": "Button hover effect"
+          }
+        },
+        "upload-styles.css": {
+          "description": "Styling for file upload interface (if used)",
+          "purpose": "Additional upload form styling"
+        }
+      },
+      "js": {
+        "app.js": {
+          "description": "Core application logic",
+          "size": "~2500+ lines",
+          "majorFunctions": {
+            "initialization": [
+              "initializeApp()",
+              "loadAllData()",
+              "setupEventListeners()"
+            ],
+            "dataLoading": {
+              "loadArticles()": {
+                "logic": "Check window.articlesData first, fallback to fetch articles.json",
+                "error_handling": "Catches fetch errors gracefully"
+              },
+              "loadBarangays()": {
+                "endpoint": "data/barangays.json",
+                "returns": "Array of barangay objects"
+              },
+              "loadHazards()": {
+                "endpoint": "data/hazards.json",
+                "returns": "Array of hazard definitions"
+              },
+              "loadMaterials()": {
+                "endpoint": "data/materials.json",
+                "returns": "Array of material recommendations"
+              }
+            },
+            "stepNavigation": {
+              "showStep(stepNumber)": "Displays specified step with animation",
+              "nextStep()": "Validates and shows next step",
+              "previousStep()": "Returns to previous step",
+              "validateStep(stepNumber)": "Ensures user selections are valid"
+            },
+            "filtering": {
+              "filterBarangaysByArea(areaType)": "Returns barangays matching selected area type",
+              "filterHazardsByBarangay(barangayId)": "Returns hazards for selected barangay",
+              "getRecommendedMaterials()": "Calculates best materials based on hazard profile"
+            },
+            "rendering": {
+              "renderStep1()": "Display area type selection cards",
+              "renderStep2()": "Populate barangay dropdown",
+              "renderStep3()": "Show hazard checkboxes",
+              "renderStep4()": "Display material recommendations with images",
+              "renderBarangayDirectory()": "Show all barangays in table/grid format",
+              "renderArticles()": "Populate articles section with cards",
+              "renderTeamMembers()": "Display team member cards in About section"
+            },
+            "eventHandlers": {
+              "areaTypeSelect()": "Handles area type selection",
+              "barangaySelect()": "Handles barangay selection",
+              "hazardToggle()": "Handles hazard checkbox changes",
+              "submitGuide()": "Processes final selection and shows results",
+              "modalOpen()": "Opens team member modal",
+              "modalClose()": "Closes all modals"
+            },
+            "carousel": {
+              "rotateCarousel()": "Cycles through hero background images",
+              "setCarouselImage(index)": "Sets specific carousel image",
+              "preloadCarouselImages()": "Preloads all 6 images for smooth transitions"
+            }
+          }
+        },
+        "upload-handler.js": {
+          "description": "Handles file uploads (if used)",
+          "purpose": "File processing and validation"
+        }
+      },
+      "data": {
+        "barangays.json": {
+          "description": "Comprehensive barangay dataset",
+          "totalBarangays": 42,
+          "structure": {
+            "barangayObject": {
+              "id": "Unique identifier",
+              "name": "Barangay name",
+              "areaType": "coastal | rural | urban | upland",
+              "description": "Location characteristics",
+              "hazards": ["Array of hazard IDs affecting this barangay"],
+              "materials": {
+                "foundation": "Recommended material ID",
+                "roof": "Recommended material ID",
+                "walls": "Recommended material ID",
+                "windows": "Recommended material ID",
+                "doors": "Recommended material ID",
+                "seismicBracing": "Recommended material ID"
+              }
+            }
+          },
+          "dataIntegration": {
+            "stage1_9Barangays": "Sangat, Santa Ana, Tabi, Tagaytay, Tigkiw, Tiris, Togawe, Union, Villareal",
+            "stage2_33Barangays": "Remaining barangays awaiting system data integration"
+          }
+        },
+        "hazards.json": {
+          "description": "Hazard definitions and severity levels",
+          "structure": {
+            "hazardObject": {
+              "id": "Unique identifier (e.g., 'typhoon', 'flood')",
+              "name": "Display name",
+              "description": "Detailed hazard description",
+              "severity": "low | medium | high",
+              "mitigation": "Recommended mitigation strategies"
+            }
+          },
+          "commonHazards": [
+            "Typhoon/Strong Winds",
+            "Flooding",
+            "Landslides",
+            "Storm Surge",
+            "Heavy Rain",
+            "Earthquake"
+          ]
+        },
+        "materials.json": {
+          "description": "Construction material database",
+          "materialTypes": 6,
+          "structure": {
+            "materialObject": {
+              "id": "Unique identifier",
+              "type": "foundation | roof | walls | windows | doors | seismicBracing",
+              "name": "Material name",
+              "description": "What it is and its uses",
+              "image": "URL to material image from Unsplash",
+              "pros": ["Array of advantages"],
+              "cons": ["Array of disadvantages"],
+              "hazardRating": {
+                "typhoon": "excellent | good | fair | poor",
+                "flood": "excellent | good | fair | poor",
+                "landslide": "excellent | good | fair | poor",
+                "stormSurge": "excellent | good | fair | poor",
+                "earthquake": "excellent | good | fair | poor"
+              },
+              "costRange": "Budget category",
+              "availability": "Locally available or requires import"
+            }
+          }
+        },
+        "articles.js": {
+          "description": "Educational articles data (JavaScript object)",
+          "format": "window.articlesData = [...]",
+          "structure": {
+            "articleObject": {
+              "id": "Unique identifier",
+              "title": "Article title",
+              "category": "Construction | Disaster Prep | Safety | etc",
+              "excerpt": "Short preview text",
+              "content": "Full article content",
+              "author": "Article author",
+              "date": "Publication date",
+              "image": "Featured image URL"
+            }
+          },
+          "loadingStrategy": "Primary data source - loaded with <script> tag before loadArticles() runs"
+        },
+        "articles.json": {
+          "description": "Educational articles data (JSON format)",
+          "purpose": "Fallback if articles.js load fails",
+          "structure": "Same as articles.js"
+        }
+      }
+    }
+  },
+  "dataFlow": {
+    "applicationStartup": [
+      "1. HTML loads with <script src='data/articles.js'>",
+      "2. articles.js executes, sets window.articlesData",
+      "3. CSS loads and applies styles",
+      "4. JavaScript app.js loads and initializes",
+      "5. initializeApp() runs:",
+      "   a. Calls loadArticles() - uses window.articlesData immediately",
+      "   b. Calls loadBarangays() - fetches barangays.json",
+      "   c. Calls loadHazards() - fetches hazards.json",
+      "   d. Calls loadMaterials() - fetches materials.json",
+      "   e. Calls renderInitialUI() - displays home page"
+    ],
+    "userJourney": [
+      "1. User clicks 'START BUILDING GUIDE'",
+      "2. Step 1: Select area type (Coastal/Rural/Urban/Upland)",
+      "3. Step 2: System filters barangays by area type, user selects one",
+      "4. Step 3: System pre-populates hazards for barangay, user can modify",
+      "5. Step 4: System recommends materials based on hazard profile",
+      "6. User reviews recommendations with detailed pros/cons",
+      "7. User can download/print or start new guide"
+    ],
+    "carouselOperation": [
+      "1. Page loads, hero-bg-0 is set to active class",
+      "2. All 6 images are preloaded into browser cache",
+      "3. Every 10 seconds, rotateCarousel() executes:",
+      "   a. Current image gets 'inactive' class (fade out animation)",
+      "   b. After 1 second fade completes, inactive classes removed",
+      "   c. Next image gets 'active' class (fade in animation)",
+      "   d. Cycle continues infinitely"
+    ]
+  },
+  "technicalStack": {
+    "frontend": {
+      "html": "HTML5 semantic markup",
+      "css": "CSS3 with animations and media queries",
+      "javascript": "Vanilla ES6 (no frameworks)",
+      "compatibility": "All modern browsers (Chrome, Firefox, Safari, Edge)"
+    },
+    "dataFormat": {
+      "configuration": "JSON files for structured data",
+      "scripts": "JavaScript object for articles (window.articlesData)"
+    },
+    "deployment": {
+      "hosting": "GitHub Pages (static)",
+      "protocol": "HTTPS",
+      "buildTool": "None required - pure static files"
+    }
+  },
+  "features": {
+    "coreFeatures": [
+      {
+        "name": "Interactive Building Guide",
+        "description": "4-step wizard for material selection",
+        "status": "Complete"
+      },
+      {
+        "name": "Location-Based Recommendations",
+        "description": "Personalized suggestions based on area and hazards",
+        "status": "Complete"
+      },
+      {
+        "name": "Hazard Assessment",
+        "description": "Comprehensive hazard mapping for all barangays",
+        "status": "9 integrated, 33 pending"
+      },
+      {
+        "name": "Material Database",
+        "description": "Detailed info on 6 material types",
+        "status": "Complete with images"
+      },
+      {
+        "name": "Barangay Directory",
+        "description": "Reference guide for all 42 barangays",
+        "status": "Complete"
+      },
+      {
+        "name": "Educational Resources",
+        "description": "Learn articles loaded from articles.js/articles.json",
+        "status": "Complete - GitHub compatible"
+      },
+      {
+        "name": "Team Member Profiles",
+        "description": "About section with 6 team member modals",
+        "status": "Complete with clickable cards"
+      },
+      {
+        "name": "Responsive Design",
+        "description": "Works on mobile, tablet, desktop",
+        "status": "Complete"
+      }
+    ],
+    "advancedFeatures": [
+      {
+        "name": "Hero Background Carousel",
+        "description": "6-image fade carousel, 10-second intervals",
+        "status": "Complete with image preloading"
+      },
+      {
+        "name": "Modal System",
+        "description": "Team member popups with backdrop blur",
+        "status": "Complete with z-index: 2000"
+      },
+      {
+        "name": "Dynamic Filtering",
+        "description": "Barangays and hazards filter based on selections",
+        "status": "Complete"
+      },
+      {
+        "name": "Image Optimization",
+        "description": "All images sourced from Unsplash/Imgur",
+        "status": "Complete"
+      }
+    ]
+  },
+  "fileSize": {
+    "index.html": "~6000 lines",
+    "styles.css": "~3200 lines",
+    "app.js": "~2500+ lines",
+    "barangays.json": "~1472+ lines",
+    "materials.json": "~800 lines",
+    "hazards.json": "~400 lines",
+    "articles.js": "Variable",
+    "articles.json": "Variable"
+  },
+  "developmentNotes": {
+    "completedTasks": [
+      "✅ 9 barangays with full system data",
+      "✅ 4 area type preview images (Imgur)",
+      "✅ 6 material type images (Unsplash)",
+      "✅ Hero carousel with 6 images and fade animations",
+      "✅ 6 team member modals with profiles",
+      "✅ Articles loading system (GitHub compatible)",
+      "✅ All CSS and JavaScript integrated"
+    ],
+    "pendingWork": [
+      "⏳ 33 remaining barangays (awaiting data)",
+      "⏳ Performance optimization (optional)",
+      "⏳ Additional UI refinements (optional)"
+    ],
+    "testingChecklist": [
+      "✓ Carousel fade animations working",
+      "✓ Step navigation functioning",
+      "✓ Hazard filtering dynamic",
+      "✓ Material recommendations displaying",
+      "✓ Images loading from CDNs",
+      "✓ Articles showing on GitHub Pages",
+      "✓ Modals opening/closing smoothly",
+      "✓ Responsive design on mobile"
+    ]
+  },
+  "deploymentInfo": {
+    "github": {
+      "repository": "https://github.com/gubat-resilient-housing/gubat-resilient-housing",
+      "branch": "main",
+      "setup": "Enable GitHub Pages in repository settings",
+      "status": "Ready for production",
+      "platform": "GitHub Pages (Static HTML5)"
+    },
+    "local": {
+      "method1": "Open index.html directly in browser",
+      "method2": "npm start (uses live-server)",
+      "method3": "npm run serve (uses Python http.server)"
+    }
+  }
+}

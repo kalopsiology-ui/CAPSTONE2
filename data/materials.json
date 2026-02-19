@@ -1,0 +1,573 @@
+{
+    "floor": [
+        { 
+            "name": "Steel-Reinforced Concrete (RCC) Floor", 
+            "category": "Floor Material",
+            "priority": "Recommended",
+            "applicableHazards": "Ground shaking, typhoon, flood, ashfall",
+            "description": "Best overall balance for earthquakes, ash load, and typhoon stability.",
+            "performance": {
+                "flood": "Dense concrete resists water exposure; prolonged flooding can promote steel corrosion if reinforcement is poorly covered. Use good cover, proper curing, and waterproofing.",
+                "ground-shaking": "Steel reinforcement provides ductility and tensile capacity, reducing brittle cracking and improving seismic performance.",
+                "ashfall": "High load capacity supports added vertical loads from ash accumulation.",
+                "typhoon": "Heavy, rigid slab improves stability and resists uplift/lateral vibration when tied into structural frame."
+            },
+            "pros": [
+                "Excellent seismic resistance with ductility",
+                "Very strong and durable",
+                "Fire-resistant and water-resistant",
+                "Good load-bearing capacity for ash accumulation",
+                "Excellent uplift and lateral force resistance"
+            ],
+            "cons": [
+                "Heavy (needs strong foundation)",
+                "Higher cost than alternatives",
+                "Requires skilled labor and proper detailing",
+                "Risk of corrosion if waterproofing is poor"
+            ]
+        },
+        {
+            "name": "Cement Backer Board Floor",
+            "category": "Floor Material",
+            "priority": "Alternative",
+            "applicableHazards": "Flood, ground shaking, ashfall",
+            "description": "Non-combustible, water-resistant underlayment. Best used as a layer within a system, not as main structural floor.",
+            "performance": {
+                "flood": "Water- and mold-resistant; maintains integrity as a base layer.",
+                "ground-shaking": "Stable, rigid base can reduce tile/finish cracking when installed correctly.",
+                "ashfall": "Non-combustible and abrasion-resistant."
+            },
+            "pros": [
+                "Water-resistant and mold-resistant",
+                "Non-combustible",
+                "Reduces tile/finish cracking",
+                "Abrasion-resistant to ash"
+            ],
+            "cons": [
+                "Limited structural capacity as standalone floor",
+                "Best used as a substrate layer",
+                "Depends on underlying structural system"
+            ]
+        },
+        {
+            "name": "Plain Cement Concrete (PCC) Floor",
+            "category": "Floor Material",
+            "priority": "Alternative",
+            "applicableHazards": "Flood, ground shaking, ashfall",
+            "description": "Simple and cost-effective; strong in compression but less crack-resistant than RCC.",
+            "performance": {
+                "flood": "Dense surface tolerates temporary submersion; cracks may form with prolonged exposure and movement.",
+                "ground-shaking": "Can handle moderate shaking if thick and well-cured, but more prone to cracking vs RCC.",
+                "ashfall": "Non-combustible; can carry ash loads reasonably well."
+            },
+            "pros": [
+                "Cost-effective option",
+                "Good compression strength",
+                "Simple construction",
+                "Non-combustible"
+            ],
+            "cons": [
+                "More prone to cracking than RCC",
+                "Limited tensile strength",
+                "Poor seismic performance without reinforcement",
+                "Risk of cracks from prolonged flooding"
+            ]
+        }
+    ],
+    "floor_system": [
+        {
+            "name": "Reinforced Concrete Floor System",
+            "category": "Floor Structural System",
+            "priority": "Recommended",
+            "applicableHazards": "Flood, ground shaking, ashfall, typhoon",
+            "description": "Integrated RC system with proper connections and reinforcement.",
+            "performance": {
+                "flood": "Durable and water-tolerant for temporary exposure.",
+                "ground-shaking": "Performs well with correct reinforcement and connections.",
+                "ashfall": "Supports ash/debris loads; easy to clean.",
+                "typhoon": "Resists uplift and lateral forces when integrated into building frame."
+            },
+            "pros": [
+                "Durable and water-tolerant",
+                "Good earthquake performance",
+                "Easy to maintain and clean",
+                "Excellent uplift resistance"
+            ],
+            "cons": [
+                "Heavy system requires strong foundations",
+                "Higher initial cost"
+            ]
+        },
+        {
+            "name": "Suspended / Raised Floor",
+            "category": "Floor Structural System",
+            "priority": "Alternative",
+            "applicableHazards": "Flood, ground shaking, ashfall",
+            "description": "Best advantage is flood protection by elevating living space.",
+            "performance": {
+                "flood": "Water passes underneath; reduces damage to interior floors.",
+                "ground-shaking": "Can perform well if properly braced and connected to columns/beams.",
+                "ashfall": "Ash generally affects roof more than floors; elevated floors protect interiors from ash/mud at ground level."
+            },
+            "pros": [
+                "Excellent flood protection",
+                "Water passes underneath without damage",
+                "Reduced ash/mud entry to living areas",
+                "Can allow good ventilation"
+            ],
+            "cons": [
+                "Requires strong lateral bracing",
+                "Needs robust anchorage to prevent sway",
+                "Moderate uplift resistance (less than solid systems)"
+            ]
+        },
+        {
+            "name": "Timber Floor System",
+            "category": "Floor Structural System",
+            "priority": "Secondary",
+            "applicableHazards": "Ground shaking",
+            "description": "Lightweight and flexible; needs moisture protection.",
+            "performance": {
+                "flood": "Vulnerable to prolonged wetting unless elevated, sealed, and treated.",
+                "ground-shaking": "Light weight reduces seismic demand; flexibility can reduce brittle failure.",
+                "ashfall": "Must be protected from fine ash intrusion and moisture."
+            },
+            "pros": [
+                "Lightweight reduces seismic demand",
+                "Flexible construction can reduce brittle failure",
+                "Relatively economical"
+            ],
+            "cons": [
+                "Vulnerable to flood damage",
+                "Requires moisture protection and treatment",
+                "Susceptible to ash and moisture intrusion",
+                "Less durable in hazard-prone areas"
+            ]
+        }
+    ],
+    "foundation": [
+        { 
+            "name": "Pile Foundation with Reinforced Concrete", 
+            "category": "Foundation Type",
+            "priority": "Recommended",
+            "applicableHazards": "Flood, ground shaking, soil erosion, drought, ashfall",
+            "description": "Deep foundation transferring loads to stable soil/rock.",
+            "performance": {
+                "flood": "Reduces reliance on flood-weakened surface soils.",
+                "ground-shaking": "Helps reduce differential settlement; strong uplift and lateral resistance.",
+                "soil-erosion": "Bypasses erodible layers.",
+                "drought": "Less surface-soil shrink/swell impact.",
+                "ashfall": "Supports additional vertical loads."
+            },
+            "pros": [
+                "Excellent for flood-prone and coastal areas",
+                "Minimizes settlement in soft soils",
+                "Good earthquake resistance when properly designed",
+                "Strong uplift and lateral resistance",
+                "Bypasses erodible surface layers",
+                "Reduces differential settlement"
+            ],
+            "cons": [
+                "High construction cost",
+                "Complex construction process",
+                "Requires specialized equipment",
+                "Needs proper geotechnical investigation"
+            ]
+        },
+        {
+            "name": "Pier Foundation with Reinforced Concrete",
+            "category": "Foundation Type",
+            "priority": "Alternative",
+            "applicableHazards": "Flood, ground shaking, soil erosion, drought",
+            "description": "Short vertical supports elevating the structure above flood level.",
+            "performance": {
+                "flood": "Elevates living space above water level.",
+                "ground-shaking": "Some movement tolerance, but depends on detailing.",
+                "soil-erosion": "Less dependence on unstable topsoil.",
+                "drought": "Reduced cracking from minor soil movement."
+            },
+            "pros": [
+                "Excellent flood protection by elevation",
+                "Less dependence on unstable topsoil",
+                "Reduced impact from soil movement",
+                "Lower cost than pile foundations",
+                "Allows water drainage underneath"
+            ],
+            "cons": [
+                "Typically less robust than piles for extreme seismic/wind demands",
+                "Moderate uplift resistance",
+                "Requires proper detailing for good performance",
+                "Less suitable for very soft soils"
+            ]
+        },
+        {
+            "name": "Plain Concrete with Stone Aggregate Foundation",
+            "category": "Foundation Material",
+            "priority": "Secondary",
+            "applicableHazards": "Moderate flooding, stable ground",
+            "description": "Durable and economical under moderate demands.",
+            "performance": {
+                "flood": "Tolerates water exposure reasonably well.",
+                "ground-shaking": "Limited crack/bending resistance."
+            },
+            "pros": [
+                "Cost-effective option",
+                "Durable under moderate conditions",
+                "Good compression strength"
+            ],
+            "cons": [
+                "Lower crack/bending resistance than reinforced concrete",
+                "Limited seismic performance",
+                "Poor tensile strength",
+                "Not recommended for high-hazard areas"
+            ]
+        }
+    ],
+    "wall": [
+        { 
+            "name": "Reinforced Concrete (RC) Wall System", 
+            "category": "Wall Structural System",
+            "priority": "Recommended",
+            "applicableHazards": "Ground shaking, typhoon, flood, ashfall",
+            "description": "RC walls with steel reinforcement acting as load-bearing and lateral-force-resisting elements.",
+            "performance": {
+                "ground-shaking": "Effective lateral system; strong stiffness with ductile detailing.",
+                "typhoon": "Resists high wind pressure and debris impact.",
+                "flood": "More moisture-tolerant than many lightweight systems.",
+                "ashfall": "Supports increased loads transferred from roof/walls."
+            },
+            "pros": [
+                "Excellent earthquake and wind resistance",
+                "Fire-resistant and durable",
+                "Strong structural integrity",
+                "Good moisture tolerance",
+                "Excellent seismic performance with proper detailing",
+                "High compressive and tensile strength"
+            ],
+            "cons": [
+                "Expensive material and labor costs",
+                "Very heavy; requires strong foundation",
+                "Poor thermal insulation without additional materials",
+                "Requires skilled labor for proper reinforcement"
+            ]
+        },
+        {
+            "name": "Confined Masonry Wall System",
+            "category": "Wall Structural System",
+            "priority": "Alternative",
+            "applicableHazards": "Ground shaking, typhoon, flood, ashfall",
+            "description": "Masonry units confined by RC tie columns and tie beams.",
+            "performance": {
+                "ground-shaking": "Improved performance versus unreinforced masonry due to confinement.",
+                "typhoon": "Handles moderate wind loads when properly tied and anchored.",
+                "flood": "Durable in wet conditions with good plastering/waterproofing.",
+                "ashfall": "Can support moderate loads."
+            },
+            "pros": [
+                "More economical than full RC walls",
+                "Improved seismic performance with confinement",
+                "Good wind resistance when properly detailed",
+                "Durable in wet conditions",
+                "Moderate cost savings"
+            ],
+            "cons": [
+                "Generally less ductile than full RC walls",
+                "Less robust than full RC in severe earthquakes/typhoons",
+                "Requires expert detailing for high-hazard areas",
+                "Dependent on proper confinement quality"
+            ]
+        },
+        {
+            "name": "Concrete Hollow Block (CHB) Wall",
+            "category": "Wall Material",
+            "priority": "Secondary",
+            "applicableHazards": "Moderate earthquake, typhoon",
+            "description": "Economical and lighter than solid concrete, but needs strong reinforcement.",
+            "performance": {
+                "ground-shaking": "Can work well if properly reinforced, grouted, and anchored.",
+                "typhoon": "Moderate wind resistance when well-detailed."
+            },
+            "pros": [
+                "Economical option",
+                "Lighter than solid concrete",
+                "Can work with proper reinforcement",
+                "Moderate construction speed"
+            ],
+            "cons": [
+                "Without strong detailing, can underperform in severe hazards",
+                "Requires careful grouting and reinforcement",
+                "More prone to cracking than solid RC",
+                "Limited capacity in high-seismic zones"
+            ]
+        }
+    ],
+    "roof": [
+        { 
+            "name": "Hip Roof with Metal Roofing", 
+            "category": "Roof Structure",
+            "priority": "Recommended",
+            "applicableHazards": "Typhoon, ground shaking, ashfall, heavy rain",
+            "description": "Sloped roof in all directions with strong wind performance, good drainage, and ash shedding.",
+            "performance": {
+                "typhoon": "Reduced uplift due to aerodynamic form; performs well under wind from multiple directions.",
+                "flood-rain": "Efficient runoff reduces water accumulation.",
+                "ground-shaking": "Stable geometry; lower collapse tendency when well-connected.",
+                "ashfall": "Sloped planes help ash slide off, reducing overload risk."
+            },
+            "pros": [
+                "Excellent wind resistance for typhoon-prone areas",
+                "Metal roofing sheds ash fall effectively",
+                "Proper anchoring provides earthquake resistance",
+                "Good water drainage",
+                "Aerodynamic form reduces wind uplift",
+                "Effective ash shedding from sloped planes"
+            ],
+            "cons": [
+                "More expensive than gabled roofs",
+                "Metal can be noisy during heavy rain",
+                "Requires proper installation to prevent leaks",
+                "Complex joint design needs careful detailing"
+            ]
+        },
+        {
+            "name": "Metal Roofing Material",
+            "category": "Roofing Material",
+            "priority": "Recommended",
+            "applicableHazards": "Typhoon, ashfall, flooding",
+            "description": "Lightweight, durable metal covering for excellent hazard performance.",
+            "performance": {
+                "typhoon": "High wind resistance when screwed/fastened correctly to braced framing.",
+                "flood-rain": "Sheds water quickly.",
+                "ashfall": "Smooth surface sheds ash; coating helps resist acidic ash corrosion.",
+                "landslide": "Light weight reduces impact mass."
+            },
+            "pros": [
+                "High wind resistance when properly fastened",
+                "Quick water shedding",
+                "Smooth surface for ash runoff",
+                "Lightweight (reduces seismic demand)",
+                "Long lifespan with proper coating",
+                "Corrosion-resistant with appropriate coating"
+            ],
+            "cons": [
+                "Noise during heavy rain (mitigated with sound dampening)",
+                "Requires proper fastening and bracing",
+                "Initial cost moderate to high",
+                "Thermal expansion/contraction requires expansion joints"
+            ]
+        },
+        {
+            "name": "Dutch Gable Roof",
+            "category": "Roof Structure",
+            "priority": "Secondary",
+            "applicableHazards": "Typhoon, ground shaking",
+            "description": "Provides attic space/light but adds complex joints.",
+            "performance": {
+                "flood-rain": "Good runoff, but seams are more leak-prone.",
+                "ground-shaking": "More complexity and some added weight can increase vulnerability.",
+                "ashfall": "Ridges/joints can collect ash and clog drainage.",
+                "typhoon": "Good if reinforced, but gable portions can be more wind-sensitive."
+            },
+            "pros": [
+                "Provides attic space and additional headroom",
+                "Good water runoff when designed well",
+                "Architectural flexibility"
+            ],
+            "cons": [
+                "Complex joints create leak points",
+                "Ash traps at ridges and junctions",
+                "Higher maintenance requirements",
+                "Gable portions more wind-sensitive",
+                "Added weight increases seismic demand"
+            ]
+        },
+        {
+            "name": "Clay Tile Roofing",
+            "category": "Roofing Material",
+            "priority": "Secondary",
+            "applicableHazards": "Flood, ashfall",
+            "description": "Heavy, traditional roofing with good water repellency.",
+            "performance": {
+                "flood-rain": "Water-repellent; good runoff.",
+                "ground-shaking": "Heavy mass increases seismic forces significantly (main drawback).",
+                "ashfall": "Non-combustible, cleanable if dry.",
+                "typhoon": "Only good if every tile is clipped/wired correctly; can become windborne debris."
+            },
+            "pros": [
+                "Water-repellent; good runoff",
+                "Non-combustible and durable",
+                "Cleanable surface",
+                "Excellent longevity",
+                "Good aesthetic appeal"
+            ],
+            "cons": [
+                "Heavy mass significantly increases seismic forces",
+                "Can become windborne debris if not perfectly secured",
+                "Requires every tile to be clipped/wired in high wind areas",
+                "High initial and maintenance cost",
+                "Brittle; tiles can crack from earthquakes"
+            ]
+        }
+    ],
+    "beam": [
+        { 
+            "name": "Reinforced Concrete Beam with Steel Reinforcement", 
+            "category": "Beam Types",
+            "priority": "Recommended",
+            "applicableHazards": "Ground shaking, typhoon, ashfall",
+            "description": "Structural beams with proper reinforcement detailing for multi-hazard performance.",
+            "performance": {
+                "ground-shaking": "Good seismic performance with proper reinforcement and ductile detailing.",
+                "typhoon": "Resists lateral forces from wind and provides stability.",
+                "ashfall": "Transfers roof/wall loads effectively."
+            },
+            "pros": [
+                "Excellent load-bearing capacity",
+                "Good seismic performance with proper detailing",
+                "Fire-resistant",
+                "Durable and long-lasting",
+                "Can provide both vertical and lateral support",
+                "Allows flexible connection design"
+            ],
+            "cons": [
+                "Heavy weight increases seismic forces",
+                "Complex formwork required",
+                "Curing time delays construction",
+                "Requires skilled labor for reinforcement"
+            ]
+        }
+    ],
+    "tie-beam": [
+        {
+            "name": "Reinforced Concrete Tie Beam",
+            "category": "Structural Members",
+            "priority": "Recommended",
+            "applicableHazards": "Ground shaking, ground movement, ashfall, typhoon",
+            "description": "Horizontal member connecting columns to improve overall integrity and distribute loads.",
+            "performance": {
+                "ground-shaking": "Reduces column spreading; improves seismic behavior.",
+                "ground-movement": "Helps prevent frame separation if one area shifts.",
+                "ashfall": "Helps distribute added roof loads; reduces cracking risk.",
+                "typhoon": "Increases frame stiffness against wind."
+            },
+            "pros": [
+                "Improves overall structural integrity",
+                "Reduces column spreading in earthquakes",
+                "Distributes loads more evenly",
+                "Prevents frame separation",
+                "Increases lateral stiffness",
+                "Essential for proper seismic performance"
+            ],
+            "cons": [
+                "Adds cost to construction",
+                "Requires careful coordination with other elements",
+                "Needs proper connection detailing"
+            ]
+        }
+    ],
+    "lintel-beam": [
+        {
+            "name": "Reinforced Concrete Lintel Beam",
+            "category": "Structural Members",
+            "priority": "Secondary but Important",
+            "applicableHazards": "Ground shaking, typhoon, ashfall",
+            "description": "Beam supporting wall loads over doors and windows to prevent collapse above openings.",
+            "performance": {
+                "ground-shaking": "Prevents collapse above openings during seismic motion.",
+                "typhoon": "Protects openings from deformation under pressure.",
+                "ashfall": "Transfers roof/wall loads away from weak opening frames."
+            },
+            "pros": [
+                "Prevents collapse above openings",
+                "Protects building envelope",
+                "Transfers loads around weak opening areas",
+                "Maintains structural continuity",
+                "Helps prevent frame failure at stress concentrations"
+            ],
+            "cons": [
+                "Additional cost and complexity",
+                "Requires careful positioning and connection",
+                "Impacts window/door sizing and placement"
+            ]
+        }
+    ],
+    "column": [
+        { 
+            "name": "Circular Reinforced Concrete Column", 
+            "category": "Column Types",
+            "priority": "Recommended",
+            "applicableHazards": "Ground shaking, typhoon, ashfall, ground movement",
+            "description": "Columns with circular cross-section and confinement reinforcement for optimal multi-hazard performance.",
+            "performance": {
+                "ground-shaking": "No weak axis; performs well under multi-directional shaking.",
+                "typhoon": "Smoother wind flow reduces localized pressure; even stress distribution.",
+                "ashfall": "Better confinement supports heavier axial loads.",
+                "ground-movement": "Handles irregular lateral pressure more effectively from landslides/settlement."
+            },
+            "pros": [
+                "High compressive strength for multi-story buildings",
+                "Excellent earthquake resistance when properly confined",
+                "Fire-resistant and durable",
+                "Uniform strength in all directions",
+                "Better confinement behavior than rectangular",
+                "Handles multi-directional seismic motion well",
+                "Smoother wind flow reduces local pressures",
+                "Can support heavier axial loads from ash accumulation"
+            ],
+            "cons": [
+                "Slightly more complex formwork than rectangular",
+                "Requires proper confinement reinforcement detailing",
+                "Difficult to modify after construction",
+                "Heavier weight increases earthquake inertia"
+            ]
+        },
+        {
+            "name": "Stilt Column (Elevated Support)",
+            "category": "Column Types",
+            "priority": "Secondary",
+            "applicableHazards": "Flood",
+            "description": "Vertical supports elevating structure above flood level.",
+            "performance": {
+                "flood": "Great for floods by elevating living space.",
+                "ground-shaking": "Needs strong bracing/anchorage for wind and quakes.",
+                "typhoon": "Requires robust connections and lateral bracing."
+            },
+            "pros": [
+                "Excellent flood protection through elevation",
+                "Allows water flow underneath",
+                "Keeps living areas away from water/debris",
+                "Reduced flood damage to building"
+            ],
+            "cons": [
+                "Great for floods but needs strong bracing/anchorage for wind and quakes",
+                "Requires robust lateral bracing system",
+                "More complex connections needed",
+                "Limited effectiveness without proper seismic detailing",
+                "Must be carefully designed for high wind areas"
+            ]
+        },
+        {
+            "name": "Rectangular Reinforced Concrete Column",
+            "category": "Column Types",
+            "priority": "Alternative",
+            "applicableHazards": "Ground shaking, typhoon",
+            "description": "Standard rectangular columns with steel reinforcement.",
+            "performance": {
+                "ground-shaking": "Has strong and weak axes; requires good reinforcement.",
+                "typhoon": "Good performance if properly sized and detailed."
+            },
+            "pros": [
+                "Standard design with well-established practices",
+                "Good load-bearing capacity",
+                "Easier formwork in some cases",
+                "Flexible integration with beam systems"
+            ],
+            "cons": [
+                "Has weak and strong axes; can cause irregular response",
+                "Requires careful orientation for bidirectional motion",
+                "Less efficient confinement than circular sections",
+                "May require larger sections for equivalent performance"
+            ]
+        }
+    ]
+}

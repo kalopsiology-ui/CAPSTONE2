@@ -1,0 +1,68 @@
+[
+    {
+        "id": "flood",
+        "name": "Flood",
+        "description": "Area experiences regular flooding during heavy rains or storm surge",
+        "icon": "💧"
+    },
+    {
+        "id": "rain-landslide",
+        "name": "Rain-Induced Landslide",
+        "description": "Landslides caused by heavy rainfall and saturated soil",
+        "icon": "⛰️"
+    },
+    {
+        "id": "earthquake-landslide",
+        "name": "Earthquake-Induced Landslides",
+        "description": "Landslides triggered by seismic activity and ground shaking",
+        "icon": "🏔️"
+    },
+    {
+        "id": "soil-erosion",
+        "name": "Soil Erosion",
+        "description": "Erosion of surface soils and topsoil from water and wind movement",
+        "icon": "🌊"
+    },
+    {
+        "id": "drought",
+        "name": "Drought / Soil Movement",
+        "description": "Dry spell conditions causing soil shrinkage, cracking, and settlement",
+        "icon": "☀️"
+    },
+    {
+        "id": "storm-surge",
+        "name": "Storm Surge",
+        "description": "Coastal flooding from tropical cyclones and strong winds",
+        "icon": "🌊"
+    },
+    {
+        "id": "sea-level-rise",
+        "name": "Sea Level Rise",
+        "description": "Coastal areas affected by rising sea levels",
+        "icon": "📈"
+    },
+    {
+        "id": "ground-shaking",
+        "name": "Ground Shaking",
+        "description": "Seismic activity and earthquake ground motion",
+        "icon": "⚡"
+    },
+    {
+        "id": "tsunami",
+        "name": "Tsunami",
+        "description": "Large ocean waves caused by underwater earthquakes or landslides",
+        "icon": "🌊"
+    },
+    {
+        "id": "ashfall",
+        "name": "Ash Fall",
+        "description": "Volcanic ash accumulation from nearby active volcanoes",
+        "icon": "🌋"
+    },
+    {
+        "id": "typhoon",
+        "name": "Typhoons",
+        "description": "Strong tropical cyclones with high winds, heavy rain, and debris impact",
+        "icon": "🌀"
+    }
+]

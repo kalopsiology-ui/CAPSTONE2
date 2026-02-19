@@ -1,0 +1,1718 @@
+[
+    {
+        "name": "Ariman",
+        "types": ["coastal", "rural"],
+        "description": "Coastal and rural area with agricultural activities",
+        "hazards": ["flood", "sea-level-rise", "ground-shaking"]
+    },
+    {
+        "name": "Bagacay",
+        "types": ["coastal", "rural", "upland"],
+        "description": "Mixed area with coastal, rural and upland characteristics",
+        "hazards": ["flood", "storm-surge", "rain-landslide"]
+    },
+    {
+        "name": "Balud Del Norte (Poblacion)",
+        "types": ["coastal", "rural"],
+        "description": "Coastal poblacion area with residential establishments",
+        "hazards": ["flood", "storm-surge", "sea-level-rise"]
+    },
+    {
+        "name": "Balud Del Sur (Poblacion)",
+        "types": ["coastal", "rural"],
+        "description": "Southern coastal poblacion area",
+        "hazards": ["flood", "storm-surge", "sea-level-rise"]
+    },
+    {
+        "name": "Benguet",
+        "types": ["rural", "upland"],
+        "description": "Upland area with agricultural terraces",
+        "hazards": ["rain-landslide", "ashfall", "earthquake-landslide"]
+    },
+    {
+        "name": "Bentuco",
+        "types": ["rural", "upland"],
+        "description": "Hazard-prone barangay with upland rural farming activities. Multi-hazard area prone to flooding, earthquakes, volcanic ash fall, typhoons, with possible erosion/landslide and drought-related soil movement.",
+        "hazards": ["rain-landslide", "earthquake-landslide", "flood", "ground-shaking", "ashfall", "typhoon", "soil-erosion", "drought"],
+        "bentuco_system": {
+            "systemName": "BENTUCO - Multi-Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components (primary choice + alternatives) and explain performance per hazard",
+            "note": "This is a conceptual design/selection document, not a structural plan. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Stay anchored (typhoon uplift + shaking) using robust foundation and continuous load path",
+                "Stay stiff and ductile where needed (RC with proper reinforcement detailing) for earthquakes",
+                "Stay elevated or water-tolerant (flooding) with corrosion protection",
+                "Keep roof light and well-fastened (earthquake + typhoon) while shedding rain and ash",
+                "Avoid weak links at openings (lintels) and between members (tie beams, proper connectors)"
+            ],
+            "recommended_components": {
+                "floors": "Steel-Reinforced Concrete (RCC) Floor with Reinforced Concrete Floor System",
+                "walls": "Reinforced Concrete (RC) Wall System",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "columns": "Circular Reinforced Concrete Columns with confinement reinforcement",
+                "structural_members": "Tie Beams and Lintel Beams as part of integrated system"
+            }
+        }
+    },
+    {
+        "name": "Beriran",
+        "types": ["rural", "upland"],
+        "description": "Landslide-prone upland agricultural community vulnerable to rain-induced landslides, earthquakes, ash fall, and typhoons. Structural design must address slope instability, lateral ground movement, seismic forces, and heavy ash accumulation.",
+        "hazards": ["rain-landslide", "earthquake-landslide", "ground-shaking", "ashfall", "typhoon", "flood", "soil-erosion", "drought"],
+        "beriran_system": {
+            "systemName": "BERIRAN - Landslide-Resilient Building System",
+            "purpose": "Provide recommended building components for landslide-prone upland areas with multi-hazard resistance",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Anchor deep into stable soil/rock (pile foundation) to bypass unstable slopes",
+                "Elevate living space above flood and erosion-prone ground zones",
+                "Design stilt columns with diagonal bracing for lateral ground movement resistance",
+                "Use monolithic RC frame with tie beams to prevent column spread during earthquakes and settlement",
+                "Keep roof lightweight and well-fastened to minimize seismic demand while resisting typhoon winds"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "walls": "Reinforced Concrete Wall System",
+                "floors": "Suspended/Elevated Floor with Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing",
+                "columns": "Reinforced Concrete Stilt Columns (Circular) with Diagonal Bracing",
+                "structural_members": "RC Tie Beams and Lintel Beams"
+            }
+        }
+    },
+    {
+        "name": "Buenavista",
+        "types": ["coastal", "rural"],
+        "description": "Coastal rural area vulnerable to flooding, storm surges, sea level rise, earthquakes, tsunamis, ash fall, and typhoons. Design must address water pressure/debris impact, seismic forces, and strong wind resistance with elevation and waterproofing strategies.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "buenavista_system": {
+            "systemName": "BUENAVISTA - Coastal Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for coastal areas exposed to multiple water and wind hazards",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer with coastal expertise following applicable building codes.",
+            "design_approach": [
+                "Elevate structure above storm surge and sea level rise with pile or stilt foundations",
+                "Use reinforced concrete shear walls for maximum resistance to water pressure and wind forces",
+                "Employ composite beams for ductility and strength under seismic and wave loading",
+                "Install metal roofing on hip roof structure for lightweight, waterproof, and wind-resistant covering",
+                "Design pile foundations anchored to stable strata to resist scour, erosion, and lateral forces"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "walls": "Reinforced Concrete Shear Walls with Full RC System",
+                "floors": "Steel-Reinforced Concrete Floor or Elevated Suspended Floor System",
+                "roof": "Hip Roof with Metal Roofing",
+                "columns": "Reinforced Concrete Columns (RCC) with proper anchorage",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            }
+        }
+    },
+    {
+        "name": "Bulacao",
+        "types": ["rural", "upland"],
+        "description": "Upland rural area with rain-induced landslide risks",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "bulacao_system": {
+            "systemName": "BULACAO - Flood & Earthquake Resilient Building System",
+            "purpose": "Provide recommended building components (primary choice + alternatives) and explain performance per hazard",
+            "note": "This is a conceptual design/selection document, not a structural plan. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Elevate structure above flood and debris flow zones with suspended/raised floors on strong foundations",
+                "Anchor foundation deep into stable soil to resist rain-induced landslide forces and lateral ground movement",
+                "Use reinforced concrete shear walls for maximum resistance to earthquake shaking and typhoon winds",
+                "Design hip roof with metal roofing to minimize ash traps, shed heavy rainfall, and resist wind uplift",
+                "Maintain continuous load path from roof to foundation with proper tie beams and lintel connections"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete (RCC) Shear Wall System with Full Reinforcement",
+                "floors": "Steel-Reinforced Concrete Floor Slab on Suspended/Elevated Frame",
+                "roof": "Hip Roof with Metal Roofing and Proper Fastening/Bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Circular Reinforced Concrete Columns with Confinement Reinforcement",
+                "structural_members": "RC Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls (lightweight, must be properly framed/braced for wind and earthquakes)",
+                "floors": "Composite floor (steel + concrete) for excellent seismic/diaphragm action (costly, detail-sensitive for corrosion protection) or Hollow core slab (lighter but prone to connection issues in earthquakes; corrosion risk if exposed)",
+                "roof": "Dutch gable roof (more complex/costly with more leak/ash-trap points unless very well detailed)",
+                "foundation": "Stone foundation (durable in moisture, strong in compression if well bonded and drained)",
+                "columns": "Composite steel + concrete columns (best balance for ductility and durability)",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard areas"
+            }
+        }
+    },
+    {
+        "name": "Cabigaan",
+        "types": ["rural", "upland"],
+        "description": "Upland farming community vulnerable to rain-induced landslides, earthquake-induced landslides, and ground shaking. Structural design must address slope instability, lateral ground movement, seismic forces, and soil erosion with deep foundations and reinforced components anchored to stable strata.",
+        "hazards": ["rain-landslide", "earthquake-landslide", "ground-shaking", "soil-erosion"],
+        "cabigaan_system": {
+            "systemName": "CABIGAAN - Landslide-Resistant Building System",
+            "purpose": "Provide recommended building components for upland farming communities vulnerable to landslides and seismic activity",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable building codes.",
+            "design_approach": [
+                "Anchor foundation deep into stable soil/rock using pile foundations to bypass unstable slopes and resist lateral ground movement",
+                "Use reinforced concrete walls and shear walls to maximize lateral resistance to earthquake shaking and landslide forces",
+                "Design circular reinforced concrete columns with confinement for equal strength in all directions under multi-directional seismic motion",
+                "Install tie beams and lintel beams to improve overall frame integrity and prevent column spread during earthquakes and ground movement",
+                "Minimize roof mass and securely fasten to reduce seismic demand while maintaining structural stability"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete anchored to stable strata",
+                "walls": "Reinforced Concrete (RC) Wall System with full reinforcement",
+                "floors": "Steel-Reinforced Concrete (RCC) Floor on Concrete Floor System",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "columns": "Circular Reinforced Concrete Columns with Confinement Reinforcement",
+                "structural_members": "RC Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "alternative_components": {
+                "foundation": "Pier Foundation with Reinforced Concrete (moderate seismic and wind resistance; less stable than piles under extreme hazards)",
+                "walls": "Confined Masonry Wall System with RC tie columns and tie beams (moderate lateral resistance; less rigid/ductile than full RCC)",
+                "floors": "Cement Backer Board (secondary, water-resistant) or Plain Cement Concrete (PCC) (tertiary, economical option)",
+                "roof": "Dutch Gable Roof (secondary, good runoff but seams prone to leaks; may trap ash at ridges)",
+                "columns": "Stilt Columns (secondary, elevates house for flood/ash protection but requires extra bracing for strong winds and earthquakes)",
+                "materials": "Concrete Hollow Blocks (CHB) for walls (economical and lightweight but requires reinforcement for severe conditions)",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard landslide areas"
+            }
+        }
+    },
+    {
+        "name": "Cabiguhan",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural community vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must address slope stability, water pressure from flash floods, seismic forces, ash accumulation, and strong wind resistance with elevated platforms and reinforced components anchored to stable strata.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "cabiguhan_system": {
+            "systemName": "CABIGUHAN - Multi-Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland areas exposed to flooding, landslides, earthquakes, ash fall, and typhoons",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable building codes.",
+            "design_approach": [
+                "Elevate structure above flood and debris flow zones with suspended/raised floors on strong foundations",
+                "Use reinforced concrete shear walls for maximum resistance to earthquake shaking and typhoon winds",
+                "Anchor foundation deep into stable soil to resist rain-induced landslide forces and lateral ground movement",
+                "Design hip roof with metal roofing to minimize ash traps, shed heavy rainfall, and resist wind uplift",
+                "Maintain continuous load path from roof to foundation with proper tie beams and lintel connections"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete (RCC) Shear Wall System with Full Reinforcement",
+                "floors": "Suspended/Raised Floor with Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and Proper Fastening/Bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Composite steel + concrete columns for best balance (ductility + durability)",
+                "structural_members": "RC Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls (lightweight, must be properly framed/braced for wind and earthquakes)",
+                "floors": "Composite floor (steel + concrete) for excellent seismic/diaphragm action (costly, detail-sensitive for corrosion protection) or Hollow core slab (lighter but connection-dependent; corrosion risk for prestressing steel)",
+                "foundation": "Stone foundation (alternative, if well-bonded and properly drained)",
+                "roof": "Dutch Gable Roof (more complex/costly with more leak and ash-accumulation points)",
+                "columns": "Circular RCC columns (economical, good all-direction resistance) or Pile-supported stilt RCC system (strongest elevation + deep anchorage but costliest)",
+                "beams": "Composite beams (steel + concrete) for best overall ductility and wind resistance",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard upland areas with flood and landslide risk"
+            }
+        }
+    },
+    {
+        "name": "Carriedo",
+        "types": ["rural", "upland"],
+        "description": "Agricultural barangay in upland area vulnerable to flooding, rain-induced and earthquake-induced landslides, soil erosion, ground shaking, typhoons, drought, and volcanic ash fall. Structural design must address slope instability, water pressure from floods, seismic forces, ash accumulation, and strong wind resistance with deep foundations and elevated platforms.",
+        "hazards": ["flood", "rain-landslide", "earthquake-landslide", "soil-erosion", "ground-shaking", "typhoon", "drought", "ashfall"],
+        "carriedo_system": {
+            "systemName": "CARRIEDO - Multi-Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland agricultural areas exposed to flooding, landslides, earthquakes, drought, ash fall, and typhoons",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable building codes.",
+            "design_approach": [
+                "Anchor foundation deep into stable soil/rock using pile foundations to bypass unstable slopes and resist lateral ground movement",
+                "Elevate structure above flood and erosion-prone ground zones with suspended floors on stilt columns",
+                "Use reinforced concrete shear walls for maximum lateral resistance to earthquake shaking, landslide forces, and typhoon winds",
+                "Design hip roof with metal roofing to shed heavy rainfall, prevent ash accumulation, and resist wind uplift from all directions",
+                "Maintain continuous load path with tie beams and lintel beams to prevent column separation and maintain structural integrity under extreme hazards"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete anchored to stable strata",
+                "walls": "Reinforced Concrete (RC) Wall System with full reinforcement",
+                "floors": "Suspended Floor with Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "columns": "Reinforced Concrete Stilt Columns with strong anchorage and bracing",
+                "structural_members": "RC Tie Beams (Ring Beams) and Lintel Beams as part of integrated system"
+            },
+            "alternative_components": {
+                "foundation": "Pier Foundation with Reinforced Concrete (elevates structure but less stable than piles for extreme hazards)",
+                "walls": "Confined Masonry Wall System with RC tie columns and tie beams (moderate resistance; requires expert detailing)",
+                "floors": "Solid concrete slab-on-grade (better for some conditions but more flood/erosion exposure; less flexible for seismic)",
+                "roof": "Dutch Gable Roof (more complex/costly with more leak and ash-accumulation points)",
+                "columns": "Steel Columns (secondary, high strength and ductility but vulnerable to corrosion and fire without continuous protection)",
+                "materials": "Clay Tile Roofing (excessive weight increases earthquake risk and requires costly reinforcement)",
+                "beams": "Composite Beam (steel + concrete) (excellent seismic and wind performance but costly and construction-intensive)",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard agricultural upland areas with multiple concurrent hazards"
+            }
+        }
+    },
+    {
+        "name": "Casili",
+        "types": ["rural", "upland"],
+        "description": "Rural community in upland area vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must address slope stability, water pressure from flash floods, seismic forces, ash accumulation, and strong wind resistance with elevated platforms and reinforced components anchored to stable strata.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "casili_system": {
+            "systemName": "CASILI - Multi-Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland rural communities exposed to flooding, landslides, earthquakes, ash fall, and typhoons",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable building codes.",
+            "design_approach": [
+                "Elevate structure above flood and debris flow zones with suspended/raised floors on strong foundations",
+                "Use reinforced concrete shear walls for maximum resistance to earthquake shaking and typhoon winds",
+                "Anchor foundation deep into stable soil to resist rain-induced landslide forces and lateral ground movement",
+                "Design hip roof with metal roofing to minimize ash traps, shed heavy rainfall, and resist wind uplift",
+                "Maintain continuous load path from roof to foundation with proper tie beams and lintel connections for slope stability"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete (RCC) Shear Wall System with Full Reinforcement",
+                "floors": "Suspended/Raised Floor with Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and Proper Fastening/Bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Composite steel + concrete columns for best overall balance (ductility + durability)",
+                "structural_members": "RC Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls (lightweight, must be properly framed/braced for wind and earthquakes)",
+                "floors": "Composite floor (steel + concrete) for excellent seismic/diaphragm action (costly, detail-sensitive for corrosion protection) or Hollow core slab (lighter but connection-dependent; corrosion risk for prestressing steel)",
+                "foundation": "Stone foundation (alternative, if well-bonded and properly drained)",
+                "roof": "Dutch Gable Roof (more complex/costly with more leak and ash-accumulation points)",
+                "columns": "Circular RCC columns (economical, strong in all directions) or Pile-supported stilt RCC system (strongest elevation + deep anchorage but costliest)",
+                "beams": "Composite beams (steel + concrete) for best all-around performance in earthquakes and typhoons",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard upland areas with flood and landslide risk"
+            }
+        }
+    },
+    {
+        "name": "Cogon",
+        "types": ["coastal", "rural"],
+        "description": "Coastal agricultural area vulnerable to flooding, storm surges, sea level rise, earthquakes, tsunamis, volcanic ash fall, and typhoons. Design must address water pressure and debris impact from surge/tsunami, seismic forces, strong wind resistance, and ash accumulation with elevation and waterproofing strategies.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "cogon_system": {
+            "systemName": "COGON - Coastal Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for coastal agricultural areas exposed to flooding, storm surges, sea level rise, earthquakes, tsunamis, ash fall, and typhoons",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer with coastal expertise following applicable building codes.",
+            "design_approach": [
+                "Elevate structure above storm surge and sea level rise with pile foundations anchored to stable strata",
+                "Use reinforced concrete shear walls for maximum resistance to water pressure, debris impact, and wind forces",
+                "Design hip roof with metal roofing for lightweight structure, excellent water drainage, and wind resistance",
+                "Employ composite beams for ductility and strength under seismic, wave loading, and heavy ash loads",
+                "Incorporate proper drainage systems and waterproofing to manage prolonged water exposure and prevent scour"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete Shear Walls with Full RC System",
+                "floors": "Steel-Reinforced Concrete Floor or Elevated Suspended Floor System",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Reinforced Concrete Columns (RCC) with proper anchorage",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls (lightweight, must be properly framed/braced) or Confined Masonry (CHB + RC tie columns/beams) (flood-durable, improved earthquake performance)",
+                "floors": "Suspended/Elevated Floor System (keeps living space above flood/surge/tsunami water, lighter for earthquakes)",
+                "foundation": "Precast Concrete (strong but depends on transport/installation and joint quality), Raft/Mat Foundation (good on weak soil but must be elevated/drained), Stilt Foundation (excellent elevation but needs strong wind bracing), Pier Foundation (for lighter structures; needs strong anchorage)",
+                "roof": "Dutch Gable Roof (more complex/costly with potential leak points)",
+                "beams": "Reinforced Concrete (RCC) Beams (durable and water/fire resistant but heavier; requires good seismic detailing)",
+                "wall_system": "Reinforced load-bearing CHB walls (secondary when properly tied to RC columns/beams)",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard coastal areas with multiple water and wind hazards"
+            }
+        }
+    },
+    {
+        "name": "Cota Na Daco (Poblacion)",
+        "types": ["urban", "coastal"],
+        "description": "Urban coastal poblacion area vulnerable to flooding, storm surges, sea level rise, earthquakes, tsunamis, volcanic ash fall, and typhoons. Design must address water pressure and debris impact from surge/tsunami, seismic forces, strong wind resistance, and ash accumulation with elevation and waterproofing strategies.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "cota_na_daco_system": {
+            "systemName": "COTA NA DACO - Coastal Urban Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for urban coastal areas exposed to flooding, storm surges, sea level rise, earthquakes, tsunamis, ash fall, and typhoons",
+            "note": "Conceptual document disclaimer",
+            "design_approach": [
+                "Elevate structure above storm surge and sea level rise with pile foundations anchored to stable strata",
+                "Use reinforced concrete shear walls for maximum resistance to water pressure, debris impact, and wind forces",
+                "Design hip roof with metal roofing for lightweight structure, excellent water drainage, and wind resistance",
+                "Employ composite beams for ductility and strength under seismic, wave loading, and heavy ash loads",
+                "Incorporate proper drainage systems and waterproofing to manage prolonged water exposure and prevent scour"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete Shear Walls with Full RC System",
+                "floors": "Steel-Reinforced Concrete Floor or Elevated Suspended Floor System",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Reinforced Concrete Columns (RCC) with proper anchorage",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls or Confined Masonry (CHB + RC tie columns/beams)",
+                "floors": "Suspended/Elevated Floor System",
+                "foundation": "Precast Concrete, Raft/Mat Foundation, Stilt Foundation, Pier Foundation",
+                "beams": "Reinforced Concrete (RCC) Beams",
+                "wall_system": "Reinforced load-bearing CHB walls (secondary when properly tied to RC columns/beams)",
+                "note": "Alternative options are secondary choices and require careful detailing and engineering review for high-hazard coastal areas with multiple water and wind hazards"
+            }
+        }
+    },
+    {
+        "name": "Dita (Estillero)",
+        "types": ["rural", "upland"],
+        "description": "Upland rural community vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must address slope instability, water pressure from floods and debris flows, seismic forces, ash accumulation, and strong wind resistance with elevated platforms, slope protection, and reinforced components anchored to stable strata.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "dita_system": {
+            "systemName": "DITA - Upland Slope-Stabilized Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland areas exposed to flooding, landslides, earthquakes, ash fall, and typhoons with emphasis on slope stabilization and elevation",
+            "note": "Conceptual document disclaimer",
+            "design_approach": [
+                "Elevate structure on pier or pile foundations to minimize slope disturbance and reduce flood/debris flow exposure",
+                "Use reinforced concrete shear walls anchored to stable strata for maximum slope stability and seismic resistance",
+                "Design hip roof with metal roofing for lightweight structure, excellent drainage, wind resistance, and ash shedding",
+                "Employ composite beams for ductility and strength under seismic, slope movement, and heavy ash loads",
+                "Incorporate slope protection and drainage systems to prevent landslides, manage water infiltration, and stabilize foundation support"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete Shear Walls with Full RC System and Slope Anchoring",
+                "floors": "Suspended/Raised Floor System or Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Composite Steel + Concrete Columns or Circular RCC Columns",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls or Reinforced Load-Bearing CHB walls when properly tied to RC columns/beams",
+                "floors": "Composite Steel + Concrete Floor System or Hollow Core Slab (with caution in high seismic areas)",
+                "foundation": "Stone Foundation (if well-bonded and well-drained) as alternative material to reinforced concrete",
+                "columns": "Circular RCC Columns (economical) or Pile-Supported Stilt RCC (highest elevation but costliest)",
+                "beams": "Reinforced Concrete (RCC) Beams",
+                "roof_structure": "Dutch Gable Roof (secondary; more complex/costly with higher leak/ash-accumulation risk)",
+                "roof_material": "Clay Tiles (not recommended for earthquakes; too heavy and wind-borne debris risk)"
+            }
+        }
+    },
+    {
+        "name": "Jupi (Estillero)",
+        "types": ["rural", "upland"],
+        "description": "Upland rural residential community vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must address slope instability, water pressure from floods and debris flows, seismic forces, ash accumulation, and strong wind resistance with elevated platforms, slope protection, and reinforced components anchored to stable strata.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "jupi_system": {
+            "systemName": "JUPI - Upland Slope-Stabilized Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland areas exposed to flooding, landslides, earthquakes, ash fall, and typhoons with emphasis on slope stabilization and elevation",
+            "note": "Conceptual document disclaimer",
+            "design_approach": [
+                "Elevate structure on pier or pile foundations to minimize slope disturbance and reduce flood/debris flow exposure",
+                "Use reinforced concrete shear walls anchored to stable strata for maximum slope stability and seismic resistance",
+                "Design hip roof with metal roofing for lightweight structure, excellent drainage, wind resistance, and ash shedding",
+                "Employ composite beams for ductility and strength under seismic, slope movement, and heavy ash loads",
+                "Incorporate slope protection and drainage systems to prevent landslides, manage water infiltration, and stabilize foundation support"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete (RC) Wall System with full reinforcement",
+                "floors": "Suspended/Raised Floor System or Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Composite Steel + Concrete Columns or Circular RCC Columns",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls or Reinforced Load-Bearing CHB walls when properly tied to RC columns/beams",
+                "floors": "Composite Steel + Concrete Floor System or Hollow Core Slab (with caution in high seismic areas)",
+                "foundation": "Stone Foundation (if well-bonded and well-drained) as alternative material to reinforced concrete",
+                "columns": "Circular RCC Columns (economical) or Pile-Supported Stilt RCC (highest elevation but costliest)",
+                "beams": "Reinforced Concrete (RCC) Beams",
+                "roof_structure": "Dutch Gable Roof (secondary; more complex/costly with higher leak/ash-accumulation risk)",
+                "roof_material": "Clay Tiles (not recommended for earthquakes; too heavy and wind-borne debris risk)"
+            }
+        }
+    },
+    {
+        "name": "Lapinig (Estillero)",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural community vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must address slope instability, water pressure from floods and debris flows, seismic forces, ash accumulation, and strong wind resistance with elevated platforms, slope protection, and reinforced components anchored to stable strata.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "lapinig_system": {
+            "systemName": "LAPINIG - Upland Slope-Stabilized Hazard-Resilient Building System",
+            "purpose": "Provide recommended building components for upland agricultural areas exposed to flooding, landslides, earthquakes, ash fall, and typhoons with emphasis on slope stabilization and elevation",
+            "note": "Conceptual document disclaimer",
+            "design_approach": [
+                "Elevate structure on pier or pile foundations to minimize slope disturbance and reduce flood/debris flow exposure",
+                "Use reinforced concrete shear walls anchored to stable strata for maximum slope stability and seismic resistance",
+                "Design hip roof with metal roofing for lightweight structure, excellent drainage, wind resistance, and ash shedding",
+                "Employ composite beams for ductility and strength under seismic, slope movement, and heavy ash loads",
+                "Incorporate slope protection and drainage systems to prevent landslides, manage water infiltration, and stabilize foundation support"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete Shear Walls with Full RC System and Slope Anchoring",
+                "floors": "Suspended/Raised Floor System or Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata",
+                "columns": "Composite Steel + Concrete Columns or Circular RCC Columns",
+                "structural_members": "Composite Beams and RC Tie Beams"
+            },
+            "alternative_components": {
+                "walls": "Fiber Cement Board for interior/upper walls or Reinforced Load-Bearing CHB walls when properly tied to RC columns/beams",
+                "floors": "Composite Steel + Concrete Floor System or Hollow Core Slab (with caution in high seismic areas)",
+                "foundation": "Stone Foundation (if well-bonded and well-drained) as alternative material to reinforced concrete",
+                "columns": "Circular RCC Columns (economical) or Pile-Supported Stilt RCC (highest elevation but costliest)",
+                "beams": "Reinforced Concrete (RCC) Beams",
+                "roof_structure": "Dutch Gable Roof (secondary; more complex/costly with higher leak/ash-accumulation risk)",
+                "roof_material": "Clay Tiles (not recommended for earthquakes; too heavy and wind-borne debris risk)"
+            }
+        }
+    },
+    {
+        "name": "Luna-Candol (Poblacion)",
+        "types": ["urban"],
+        "description": "Urban poblacion commercial area vulnerable to flooding, earthquakes, volcanic ash fall, and typhoons. Buildings must combine water resistance (flood mitigation), seismic ductility (earthquake survival), ash-load capability, and wind resistance with elevated/waterproofed foundations, reinforced concrete structures, and composite systems for modern urban resilience.",
+        "hazards": ["flood", "ground-shaking", "ashfall", "typhoon"],
+        "luna_system": {
+            "systemName": "LUNA - Urban Multi-Hazard Resilient Building System",
+            "purpose": "Provides adaptive design framework for urban commercial/residential structures in flood-prone, seismically active, ashfall-vulnerable, and typhoon-exposed areas, balancing modern urban density with natural hazard resilience through elevated/waterproofed foundations, reinforced concrete primary structures, and composite systems.",
+            "note": "Conceptual document for design/selection guidance. Final sizing, reinforcement, connections, and detailing must follow applicable building codes and site-specific hazard investigations.",
+            "design_approach": [
+                "Elevate first floor on pier or strip footing with waterproofing to reduce flood impact on occupied/commercial space",
+                "Use reinforced concrete shear walls as primary lateral-force system for earthquakes and typhoon wind resistance",
+                "Design hip or gable roof with metal roofing to handle ash accumulation loads and provide superior wind/drainage performance",
+                "Employ composite (steel + concrete) beams and columns for ductility in earthquakes and typhoons, plus durability in ash/flood environment",
+                "Integrate continuous beam systems for load redundancy and stable distribution under seismic, wind, and heavy ash loading"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced concrete (RC) shear walls or RC-tied confined masonry (CHB + RC columns/beams)",
+                "floors": "Elevated suspended/raised concrete slab on pier or strip foundation",
+                "foundation": "Pier foundation (elevation + flexibility) or strip footing (uniform shallow support) with reinforced concrete",
+                "roof": "Hip roof or gable roof with metal roofing and composite framing",
+                "columns": "Composite steel + concrete or circular RCC columns on elevated foundation",
+                "beams": "Composite (steel + concrete) beams with continuous system for load distribution"
+            },
+            "alternative_components": {
+                "walls": {
+                    "primary": "Reinforced concrete (RC) walls - High cost but water-resistant (no rot), ductile in earthquakes (rebar), heavy/strong for typhoon winds and roof anchorage, supports ash loads",
+                    "secondary": "Fiber cement board - Lightweight for interiors/upper areas; must be properly framed/braced for wind and earthquakes",
+                    "alternative": "Confined masonry (CHB + RC tie columns/beams) - Better flood durability than wood, safer seismic behavior than unreinforced CHB, good wind/roof support, can take ash loads"
+                },
+                "wall_structural_systems": {
+                    "primary": "RC shear walls (Preferred) - Main lateral-force system for earthquakes + typhoons; stable if elevated/waterproofed; supports ash loads; high cost",
+                    "alternative": "Reinforced load-bearing CHB walls - Acceptable if reinforced and tied with RC columns/beams"
+                },
+                "foundation_structures": {
+                    "primary1": "Pier foundation - Elevates above floodwater; can reduce earthquake stress (piers move independently); reduces ground contact/erosion; slope-friendly design option",
+                    "primary2": "Strip footing - Continuous shallow footing for load-bearing walls; good uniform support for quakes and wind loads; needs elevation to reduce flood contact"
+                },
+                "foundation_materials": {
+                    "primary": "Reinforced concrete (Preferred) - Durable in floods, stronger and less brittle in earthquakes, resists wind loads, supports heavy ash loads",
+                    "alternative": "Stone - Durable and strong in compression if well-bonded and drained; fire-resistant and can support added ash weight"
+                },
+                "columns": {
+                    "primary": "Composite steel + concrete columns - Best overall balance (ductility for quakes/typhoons + concrete durability); strong for ash loads",
+                    "secondary": "Circular RCC columns - Economical and strong in all directions; improved wind/water flow behavior due to shape",
+                    "alternative": "Pile-supported stilt RCC system - Highest protection via elevation + deep anchorage, but costliest and needs strong bracing"
+                },
+                "beams": {
+                    "primary": "Composite beams (steel + concrete) - Best all-around for earthquake ductility, typhoon wind loading, and heavy ash roof loads (needs corrosion protection/detailing)",
+                    "secondary": "Continuous beam system - Adds redundancy and stability by distributing loads across spans, reducing sudden/progressive failure risk",
+                    "alternative": "RCC beams - Durable and fire/water-resistant; heavier, so requires good seismic detailing"
+                }
+            }
+        }
+    },
+    {
+        "name": "Manapao",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural community vulnerable to rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Buildings must integrate deep soil anchoring for slope stability and ground movement resistance, reinforced load-bearing systems for seismic ductility, and elevated platforms to reduce flood/erosion exposure with proper drainage and slope protection measures.",
+        "hazards": ["rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "manapao_system": {
+            "systemName": "MANAPAO - Upland Slope-Stabilized Hazard-Resilient Building System",
+            "purpose": "Provides structural design framework for upland agricultural communities prone to rain-induced landslides, earthquakes, ashfall, and typhoons, combining deep pile foundations for slope stability, reinforced concrete load-bearing systems for seismic/wind resistance, elevated floors for flood/erosion mitigation, and composite framing for multi-hazard durability.",
+            "note": "Conceptual document for design/selection guidance. Final sizing, reinforcement, connections, and detailing must follow applicable building codes and site-specific slope stability, geotechnical, and landslide hazard investigations.",
+            "design_approach": [
+                "Use pile foundations with deep anchorage to stable soil/rock layers to resist settlement, sliding, and earthquakes while supporting added ash loads",
+                "Design reinforced concrete wall systems (load-bearing or shear walls) for strength during soil movement, earthquakes, typhoons, and moisture exposure",
+                "Elevate floors on suspended systems to reduce flood/erosion exposure and seismic demand while maintaining durability in moist upland environment",
+                "Choose hip roofs with metal roofing for superior wind resistance, drainage, ash shedding, and lightweight seismic performance",
+                "Employ reinforced concrete stilt columns with diagonal bracing for elevation, wind/quake resistance, and proper load distribution to deep foundations"
+            ],
+            "recommended_components": {
+                "foundation": "Pile foundation with reinforced concrete",
+                "walls": "Reinforced concrete wall system (load-bearing or shear walls)",
+                "floors": "Suspended/elevated floor with reinforced concrete slab",
+                "roof": "Hip roof with metal roofing",
+                "columns": "Reinforced concrete stilt columns (circular/square) with diagonal bracing",
+                "beams": "Reinforced concrete beams with tie/ring beams for monolithic frame"
+            },
+            "alternative_components": {
+                "foundation": {
+                    "primary": "Pile Foundation + Reinforced Concrete - Deep anchorage to stable soil/rock reduces settlement/sliding, improves seismic performance, resists typhoon loads, carries added ash loads",
+                    "secondary": "Pier Foundation + Stone - Elevates and reduces soil disturbance, but less deep/continuous anchorage and less ductile than reinforced concrete"
+                },
+                "walls": {
+                    "primary": "Reinforced Concrete Wall System (structure + material) - Strong load-bearing and lateral resistance for earthquakes/typhoons; maintains integrity during soil movement; durable in moisture and under ash loading",
+                    "alternative": "Confined Masonry + Fly Ash Bricks - Moderate performance; generally less drift capacity and moisture durability than full RC system"
+                },
+                "floors": {
+                    "primary": "Suspended Floor + Reinforced Concrete Slab - Elevated/lighter system reduces flood/erosion exposure and seismic demand; durable, fire- and moisture-resistant",
+                    "secondary": "Composite Floor System - Higher performance but costly and requires careful corrosion protection in moist upland environment"
+                },
+                "roof_structure": {
+                    "primary": "Hip Roof - Improves wind resistance, drainage, and earthquake stability; sloped form sheds ash effectively",
+                    "secondary": "Dutch Gable Roof - More complex with more leak/ash-trap points; higher maintenance needs",
+                    "alternative": "Gable Roof - More economical but less wind-stable than hip configuration"
+                },
+                "roof_material": {
+                    "primary": "Metal Roofing - Lightweight, non-combustible, typhoon-resistant when properly fastened/coated",
+                    "secondary": "Clay Tiles - Too heavy for earthquakes; projectile risk unless fully secured"
+                },
+                "columns": {
+                    "primary": "Reinforced Concrete Stilt Columns (circular or square) with diagonal bracing - Elevation helps flooding; bracing and strong connections key for wind and quake resistance",
+                    "secondary": "Steel Columns - High strength/ductility but needs ongoing fireproofing and corrosion protection"
+                },
+                "beams": {
+                    "primary": "Reinforced Concrete Beams with Tie/Ring Beams - Monolithic frame prevents column spread/failure in earthquakes and uneven ground movement; improves typhoon resistance and ash/fire durability",
+                    "alternative": "Composite Beams (Steel + Concrete) - High performance but costly and corrosion/detail-sensitive"
+                }
+            }
+        }
+    },
+    {
+        "name": "Manook (Poblacion)",
+        "types": ["urban"],
+        "description": "Urban poblacion area",
+        "hazards": ["ground-shaking", "typhoon"]
+    },
+    {
+        "name": "Naagtan",
+        "types": ["rural"],
+        "description": "Rural agricultural area",
+        "hazards": ["flood", "ground-shaking"]
+    },
+    {
+        "name": "Nato",
+        "types": ["rural", "upland"],
+        "description": "Upland farming community",
+        "hazards": ["rain-landslide", "earthquake-landslide"]
+    },
+    {
+        "name": "Nazareno",
+        "types": ["rural", "upland"],
+        "description": "Agricultural barangay in upland",
+        "hazards": ["rain-landslide", "earthquake-landslide"]
+    },
+    {
+        "name": "Ogao",
+        "types": ["coastal", "rural"],
+        "description": "Coastal rural community",
+        "hazards": ["flood", "storm-surge", "sea-level-rise"]
+    },
+    {
+        "name": "Paco",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural area",
+        "hazards": ["rain-landslide", "earthquake-landslide"]
+    },
+    {
+        "name": "Panganiban (Poblacion)",
+        "types": ["urban", "coastal"],
+        "description": "Urban coastal poblacion with commercial activities",
+        "hazards": ["flood", "ground-shaking", "storm-surge", "sea-level-rise"]
+    },
+    {
+        "name": "Paradijon (Poblacion)",
+        "types": ["urban"],
+        "description": "Urban poblacion area",
+        "hazards": ["flood", "ground-shaking", "typhoon"]
+    },
+    {
+        "name": "Patag",
+        "types": ["rural", "upland"],
+        "description": "Flat agricultural land in upland",
+        "hazards": ["flood", "rain-landslide"]
+    },
+    {
+        "name": "Payawin",
+        "types": ["rural", "upland"],
+        "description": "Upland farming community",
+        "hazards": ["rain-landslide", "earthquake-landslide"]
+    },
+    {
+        "name": "Pinontingan (Poblacion)",
+        "types": ["urban"],
+        "description": "Urban poblacion area vulnerable to flooding, storm surge, sea level rise, earthquakes, tsunamis, volcanic ash fall, and typhoons. Buildings must address water pressure and debris impact from surge and tsunami, seismic forces, strong wind resistance, and ash accumulation with reinforced concrete structures, elevated foundations, metal roofing, and composite framing systems.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "pinontingan_system": {
+            "systemName": "PINONTINGAN - Urban Coastal Multi-Hazard Resilient Building System",
+            "purpose": "Integrated framework for urban poblacion communities in Pinontingan, addressing compound hazards of flooding, storm surge, sea level rise, earthquakes, tsunamis, volcanic ash accumulation, and typhoons through reinforced concrete structural systems with flood resilience, seismic ductility, wave/impact resistance, and wind-resistant design optimized for coastal urban density.",
+            "note": "This is a conceptual design/selection document for urban coastal multi-hazard areas. Final sizing, reinforcement, connections, and structural detailing must be done by a licensed civil/structural engineer with coastal engineering expertise following applicable building codes.",
+            "design_approach": [
+                "Use full reinforced concrete structural systems (walls, beams, columns) with integrated shear walls for water-resistance, seismic ductility, tsunami impact survival, and typhoon wind capacity",
+                "Employ pile or elevated foundations with waterproofing measures to protect structures from flood, surge, and sea level rise inundation while maintaining seismic anchorage and lateral stability",
+                "Design hip roofs with metal roofing for superior water drainage, wind resistance, volcanic ash shedding, and lightweight earthquake behavior in urban coastal areas",
+                "Implement composite (steel+concrete) or reinforced concrete beams for ductility under combined seismic, wave, and wind loading with high ash-load capacity and corrosion protection",
+                "Choose elevated concrete floors and suspended systems to keep living spaces above anticipated flood, surge, and tsunami water levels while providing adequate bracing and diaphragm action"
+            ],
+            "recommended_components": {
+                "walls_primary_material": "Full Reinforced Concrete Wall System - water- and impact-resistant for flood/surge, ductile with rebar for earthquakes, best survivability among common wall types for tsunami impact, heavy/rigid for typhoon winds and roof anchorage, supports ash loads. Dimensions: 150-200mm thickness with f'c ≥ 21 MPa and minimum 8-12mm diameter reinforcement bars spaced 150-200mm.",
+                "walls_primary_structure": "RC Shear Walls (Preferred Lateral System) - main lateral-force resisting system for earthquakes and typhoons; helps resist wave and debris forces when elevated and waterproofed. Superior to simple load-bearing walls for urban multi-story buildings in coastal areas.",
+                "foundation_material": "Reinforced Concrete Foundation - durable in wet/saline coastal exposure, ductile with steel for earthquakes, strong anchorage against typhoon uplift and lateral forces, supports added ash loads. Minimum f'c ≥ 21 MPa with epoxy-coated or stainless steel reinforcement.",
+                "foundation_structure": "Pile Foundation (Preferred) - deep support reduces scour/erosion, improves performance in soft coastal soils, limits differential settlement in earthquakes, supports elevation for surge/sea level rise protection. Typical: 400-600mm diameter bored/driven piles, 8-12m depth depending on coastal soil conditions.",
+                "roof_structure": "Hip Roof - best for typhoons (reduced uplift), balanced in earthquakes, sheds water/ash effectively, more aerodynamic in tsunami/wind events. Slope typically 25-35° for optimal water drainage and wind performance.",
+                "roof_material": "Metal Roofing - lightweight (better in earthquakes/tsunami scenarios), corrosion-resistant when coated, sheds ash/water, performs well in typhoons when properly fastened (140+ kph capacity). Corrugated galvanized steel or aluminum 18-22 gauge with protective coating.",
+                "beams_primary": "Composite Beams (Steel + Concrete) - best all-around for quake/wind/wave/ash loads with needs for adequate corrosion protection and coastal detailing. Strong and ductile for seismic/wind forces, excellent ash-load capacity, high strength-to-weight ratio.",
+                "columns_primary": "Reinforced Concrete Columns (RCC) - durable and strong for wind/water exposure and seismic forces with proper detailing. Thick concrete provides corrosion protection in coastal salt-spray environment.",
+                "floors_primary": "Steel-Reinforced Concrete Floor (Concrete Slab) - water-resistant, non-combustible, strong diaphragm for earthquakes, resists typhoon uplift when well anchored, carries ash loads. Typical: 150-200mm thickness with φ10-φ12 reinforcement @ 150-200mm both ways."
+            },
+            "alternative_components": {
+                "walls_secondary": "Fiber Cement Board (Non-Structural) - lightweight for interior/upper walls; needs proper steel/treated-wood framing for wind and earthquake safety. Requires waterproofing and is not suitable as primary lateral load-carrying system.",
+                "walls_tertiary": "Confined Masonry (CHB + RC tie columns/beams) - more resilient than unreinforced CHB in floods, quakes, and typhoons; supports ash loads but generally less robust than full RC. Acceptable if RC frame provides adequate lateral support.",
+                "foundation_material_alternative": "Precast Concrete Foundation - fast construction and quality-controlled; however, joint/connection reliability is a key weakness in earthquakes and coastal conditions. Requires expert detailing of connections for seismic and coastal performance.",
+                "foundation_structure_alternative_1": "Raft/Mat Foundation (Conditional) - good load distribution for weak coastal soils; must be elevated/drained for flood safety and requires careful design for differential settlement in earthquakes.",
+                "foundation_structure_alternative_2": "Stilt Foundation (Conditional) - excellent elevation for flood/surge/tsunami flow-through; needs strong wind bracing and non-combustible, durable posts. Requires careful connection design for wind and seismic uplift.",
+                "foundation_structure_alternative_3": "Pier Foundation (Conditional) - workable for light structures; requires strong anchoring for wind and quakes. Less effective than deep piles for large urban buildings in highly active zones.",
+                "roof_structure_alternative": "Gable or Gabled-Hip Roof (Secondary) - can work but need extra bracing; gabled-hip is stronger but more complex and leak-prone at joints. Gabled roofs have wind pressure concentration on flat end walls not recommended for exposed coastal areas.",
+                "roof_material_alternative": "Concrete Slab Roof (Not Recommended for Coastal Urban) - very strong for wind/water/fire/ash, but too heavy unless fully engineered for earthquakes; expensive, needs excellent waterproofing, and increases seismic demand on structure.",
+                "beams_alternative": "Reinforced Concrete Beams (RCC) - durable and strong but heavier, so require good seismic detailing. Less efficient spans than composite beams; acceptable if corrosion protection and seismic design are properly addressed.",
+                "columns_alternative_1": "Stilt Columns (Conditional) - elevates structure above flood/surge levels; must be heavily braced for wind and seismic forces. Requires non-combustible materials and strong connection design for coastal conditions.",
+                "columns_alternative_2": "Composite Steel+Concrete Columns (High-Performance Option) - if corrosion is managed through proper detailing and protective coatings. Combines concrete stiffness with steel ductility but requires expert design and maintenance.",
+                "floors_alternative": "Hollow Core Slab (Secondary) - lighter weight than solid slab but requires careful seismic connections. Prestressing steel corrosion risk in coastal salt-spray environment; less suitable for fully submerged inundation scenarios."
+            }
+        }
+    },
+    {
+        "name": "Rizal",
+        "types": ["coastal", "rural"],
+        "description": "Coastal rural area with black sand beaches vulnerable to flooding, storm surge, sea level rise, earthquakes, tsunamis, volcanic ash fall, and typhoons. Buildings must address water pressure and debris impact from surge and tsunami, seismic forces, strong wind resistance, and ash accumulation with reinforced concrete structures, elevated foundations, metal roofing, and composite framing systems.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "rizal_system": {
+            "systemName": "RIZAL - Coastal Rural Multi-Hazard Resilient Building System",
+            "purpose": "Integrated framework for coastal rural communities in Rizal, addressing compound hazards of flooding, storm surge, sea level rise, earthquakes, tsunamis, volcanic ash accumulation, and typhoons through reinforced concrete structural systems with flood resilience, seismic ductility, wave/impact resistance, and wind-resistant design optimized for coastal rural character.",
+            "note": "This is a conceptual design/selection document for coastal rural multi-hazard areas. Final sizing, reinforcement, connections, and structural detailing must be done by a licensed civil/structural engineer with coastal engineering expertise following applicable building codes.",
+            "design_approach": [
+                "Use full reinforced concrete structural systems with integrated shear walls for water-resistance, seismic ductility, tsunami impact survival, and typhoon wind capacity in coastal rural communities",
+                "Employ pile foundations or elevated structures with waterproofing measures to protect buildings from flood, surge, and sea level rise inundation while maintaining seismic anchorage and lateral stability",
+                "Design hip roofs with metal roofing for superior water drainage, wind resistance, volcanic ash shedding, and lightweight earthquake behavior optimized for coastal exposure",
+                "Implement composite (steel+concrete) or reinforced concrete beams for ductility under combined seismic, wave, and wind loading with high ash-load capacity and corrosion protection",
+                "Choose elevated concrete floors and suspended systems to keep living spaces above flood, surge, and tsunami water levels while providing adequate bracing and diaphragm action for earthquake forces"
+            ],
+            "recommended_components": {
+                "walls_primary_material": "Full Reinforced Concrete Wall System - best overall against water + debris impact (flood/surge/sea level rise), earthquakes (ductile with rebar), typhoons (rigid/heavy, anchors roof), and ash loads. Dimensions: 150-200mm thickness with f'c ≥ 21 MPa and minimum 8-12mm diameter reinforcement bars spaced 150-200mm.",
+                "walls_primary_structure": "RC Shear Walls (Preferred Lateral System) - main lateral-force resisting system for earthquakes and typhoons; offers best resistance available for tsunami forces (improved survivability vs. other wall types). Superior to simple load-bearing walls for coastal rural multi-hazard areas.",
+                "foundation_material": "Reinforced Concrete Foundation - durable in wet/saline coastal exposure, ductile with steel for earthquakes, strong anchorage against typhoon uplift and lateral forces, supports added ash loads. Minimum f'c ≥ 21 MPa with epoxy-coated or stainless steel reinforcement for corrosion resistance.",
+                "foundation_structure": "Pile Foundation (Preferred) - deep anchorage reduces scour/erosion, improves performance in soft coastal soils, limits differential settlement in earthquakes, and supports elevation for surge/sea level rise protection. Typical: 400-600mm diameter bored/driven piles, 8-12m depth depending on coastal soil conditions.",
+                "roof_structure": "Hip Roof - best all-around for typhoons (reduced uplift), sheds rain, helps ash slide off, stable geometry in earthquakes. Slope typically 25-35° for optimal water drainage and wind performance.",
+                "roof_material": "Metal Roofing - lightweight for earthquakes, can be securely fastened for typhoons (140+ kph capacity), sheds water/ash, must use corrosion-resistant coating in coastal salt-spray environment. Corrugated galvanized steel or aluminum 18-22 gauge with protective finish.",
+                "beams_primary": "Composite Beams (Steel + Concrete) - best overall balance: ductile in earthquakes, strong for typhoons/tsunami forces, supports heavy ash loads. Requires protection of steel from corrosion through proper detailing and protective coatings.",
+                "columns_primary": "Reinforced Concrete (RCC) Columns - durable and strong for flood/surge/typhoons, good seismic performance with proper detailing, supports ash loads. Thick concrete provides corrosion protection in coastal salt-spray environment.",
+                "floors_primary": "Steel-Reinforced Concrete Floor (Concrete Slab) - water-resistant, non-combustible, strong for ash loads, good diaphragm action for earthquakes, resists typhoon uplift when well anchored. Typical: 150-200mm thickness with φ10-φ12 reinforcement @ 150-200mm both ways."
+            },
+            "alternative_components": {
+                "walls_secondary": "Fiber Cement Board (Non-Structural) - lightweight for interiors/upper walls; must be properly framed for wind and earthquakes. Requires waterproofing and is not suitable as primary lateral load-carrying system.",
+                "walls_tertiary": "Confined Masonry (CHB with RC tie beams/columns) - better than unreinforced CHB in floods and earthquakes, good for wind and ash; typically less robust than full RC. Acceptable if RC frame provides adequate lateral support.",
+                "foundation_material_alternative": "Precast Concrete Foundation - good quality control but joints/assembly can reduce seismic reliability if not executed perfectly. Requires expert detailing of connections for coastal performance.",
+                "foundation_structure_alternative_1": "Raft/Mat Foundation (Secondary) - great for uneven soil and distributing earthquake loads; must be elevated and properly drained for flood safety.",
+                "foundation_structure_alternative_2": "Stilt Foundation (Secondary) - excellent for elevation in flood/surge/sea level rise/tsunami flow-through; needs strong bracing and non-combustible, durable materials (avoid unprotected wood).",
+                "foundation_structure_alternative_3": "Pier Foundation (Secondary) - workable for light structures; must be strongly anchored for wind and seismic forces.",
+                "roof_structure_alternative": "Gable or Gabled-Hip Roof (Secondary) - can work but needs extra bracing and careful detailing; more vulnerable to typhoon winds and leakage at intersections.",
+                "roof_material_alternative": "Concrete Slab Roof (Not Recommended for Coastal Rural) - excellent for wind/water/fire/ash but too heavy unless whole structure engineered for earthquake loads; costly and needs good waterproofing. Increases seismic demand.",
+                "beams_alternative": "RCC Beams (Secondary) - durable, fire- and water-resistant, strong for ash loads; heavier so needs good seismic detailing. Less efficient spans than composite beams.",
+                "columns_alternative_1": "Stilt Columns (Conditional) - add elevation for flood/surge/sea level rise/tsunami flow-through; require heavy bracing for wind and careful anchorage for seismic forces.",
+                "columns_alternative_2": "Composite Columns (Steel + Concrete) (High-Performance) - combines concrete stiffness with steel ductility; strong multi-hazard option if corrosion protection is maintained through expert design and coatings.",
+                "floors_alternative": "Hollow Core Slab (Secondary) - lighter weight than solid slab but requires careful seismic connections. Prestressing steel corrosion risk in coastal salt-spray environment."
+            }
+        }
+    },
+    {
+        "name": "San Ignacio",
+        "types": ["rural", "coastal"],
+        "description": "Coastal rural agricultural community vulnerable to flooding, storm surge, sea level rise, earthquakes, tsunamis, volcanic ash fall, and typhoons. Buildings must address water pressure and debris impact from surge and tsunami events, seismic forces from ground shaking, strong wind forces from typhoons, and ash accumulation with resilient concrete structures, elevated foundations, secure metal roofing, and composite framing systems.",
+        "hazards": ["flood", "storm-surge", "sea-level-rise", "ground-shaking", "tsunami", "ashfall", "typhoon"],
+        "san_ignacio_system": {
+            "systemName": "SAN IGNACIO - Coastal Rural Multi-Hazard Resilient Building System",
+            "purpose": "A comprehensive design and construction framework for resilient buildings in San Ignacio's coastal rural agricultural community, addressing vulnerability to flooding, storm surge, sea level rise, earthquakes, tsunamis, ash fall, and typhoons. This system prioritizes elevated, water-resistant foundations; robust concrete structures with seismic ductility; secure, lightweight metal roofing; and composite or reinforced concrete framing to ensure survival and recovery through multiple natural hazards.",
+            "note": "This is a conceptual document for general guidance only. Final design, engineering, and construction must comply with applicable building codes, local regulations, and site-specific conditions. Consultation with qualified structural engineers, geotechnical specialists, and coastal engineering experts is essential for proper implementation in San Ignacio's multi-hazard coastal rural environment.",
+            "design_approach": [
+                "Water Resilience: Implement elevated pile or stilt foundations to allow flood and surge water flow-through, combined with pile-supported structures (minimum 1-2 meters above design flood level) to prevent debris accumulation and reduce hydrostatic pressure on buildings.",
+                "Seismic Ductility: Use reinforced concrete (RC) shear walls and composite (steel + concrete) beams to provide lateral strength and ductility during ground shaking, preventing brittle failure and allowing plastic deformation before structural collapse.",
+                "Typhoon Wind Resistance: Design hip roof structures to reduce uplift forces, secure all roof-to-wall connections with anchors, use corrosion-resistant metal roofing with proper fastening patterns, and ensure columns and beams are properly braced against lateral wind forces.",
+                "Tsunami & Surge Survivability: Prioritize column-and-beam structural systems (soft story with strong perimeter walls) over solid walls, allowing water and debris to pass through lower levels while maintaining structural integrity; avoid trapping water that increases hydrodynamic forces.",
+                "Ash & Wind Load Handling: Design roof slopes (hip preferred, minimum 20° pitch) to shed ash and water naturally, use lightweight metal roofing to minimize total load during ash accumulation and seismic events, and provide internal drainage systems to prevent ponding and structural overload."
+            ],
+            "recommended_components": {
+                "walls": "Full reinforced concrete (RC) wall system with RC shear walls as the primary lateral system. Best overall performance against water and debris impact (flood/surge/sea level rise), excellent ductility in earthquakes (with continuous rebar), strong resistance to typhoon wind forces (rigid, heavy, good roof anchorage), and good capability for ash load distribution. Shear walls (solid RC) should be the primary design choice.",
+                "foundation_material": "Reinforced concrete (RC) foundation. Highly durable in wet and saline coastal exposure; provides ductile response with steel reinforcement during seismic events; strong anchorage capability against typhoon uplift forces; excellent support for accumulated ash loads on upper structure.",
+                "foundation_structure": "Pile foundation (deep piles, 8-12 meters minimum). Provides deep anchorage to prevent scour and erosion in flood/surge/sea-level-rise events; improves performance in soft coastal soils; limits differential settlement and liquefaction risk during earthquakes; supports elevation for surge and sea level rise protection; allows water and debris flow-through without resistance.",
+                "roof_structure": "Hip roof geometry. Best all-around design for typhoons (greatly reduces uplift forces), naturally sheds rain and ash accumulation, provides stable geometry during seismic shaking, and minimizes interior leakage at roof-wall intersections compared to gable roofs.",
+                "roof_material": "Metal roofing (corrugated steel or aluminum, corrosion-resistant coating). Lightweight for earthquake loads; can be securely fastened with appropriate pattern to resist typhoon uplift; excellent water and ash shedding; must use high-quality corrosion-resistant coating or stainless steel for long-term durability in coastal salt-spray environment.",
+                "columns": "Reinforced concrete (RCC) circular columns, minimum 400mm diameter. Durable and strong for flood, surge, and typhoon forces; excellent seismic performance with proper detailing and confinement; good support for accumulated ash loads; circular cross-section provides better seismic performance than square.",
+                "beams": "Composite beams (structural steel + reinforced concrete composite action). Best overall balance—provides ductility in earthquakes, strong resistance to typhoon and tsunami impact forces, excellent capacity for heavy ash loads; requires proper corrosion protection of steel components in coastal environment (paint, epoxy, or stainless).",
+                "floors": "Steel-reinforced concrete floor slabs (solid or composite). Water-resistant and non-combustible; strong capacity for accumulated ash loads; provides good diaphragm action for seismic load distribution; resists typhoon uplift forces when properly anchored to supporting beams and columns.",
+                "interior_partitions": "Fiber cement or gypsum board non-structural partitions over RC frame. Lightweight to reduce seismic mass; allows interior flexibility for post-disaster adaptation; provides some fire and water resistance; non-load-bearing design simplifies repairs.",
+                "door_and_window_design": "Aluminum or PVC frames with tempered or laminated glass; sliding doors with secure latches or storm shutters. Reduces wind-borne debris impact hazard; secure fastening to RC frame prevents blow-out during typhoons; tempered glass reduces sharp fragments; operable shutters allow occupants to reduce openings during storm."
+            },
+            "alternative_components": {
+                "walls_secondary": "Confined masonry (concrete hollow blocks or CHB with RC tie beams and columns): Better than unreinforced CHB in floods and earthquakes; good resistance to wind and ash loads; typically less robust than full RC in surge/tsunami impact and seismic shaking. Trade-off: Lower cost, but reduced ductility and impact resistance.",
+                "walls_tertiary": "Fiber cement board for non-structural interior and upper walls: Lightweight option; must be properly framed with RC or steel backing; lower impact resistance than concrete in flood/debris events. Trade-off: Cost savings, but requires careful detailing and cannot carry lateral loads.",
+                "foundation_material_alt": "Precast concrete pile and cap system: Good quality control in manufacturing; potential weakness at joints and assembly if not executed to high standards; seismic reliability depends on connection detailing. Trade-off: Faster installation, but higher sensitivity to workmanship.",
+                "foundation_structure_alt1": "Raft or mat foundation: Excellent for distributing earthquake loads and accommodating uneven soil settlement; must be combined with elevation platform and good drainage system for flood safety; requires thicker concrete for structural depth. Trade-off: Simpler for soft soils, but needs elevation and drainage features for coastal applicability.",
+                "foundation_structure_alt2": "Stilt or pier foundation (elevated post-and-beam): Excellent for elevation in flood/surge/sea-level-rise/tsunami flow-through environments; needs strong diagonal bracing for earthquake and wind forces; avoid vulnerable materials like unprotected wood. Trade-off: High elevation and flow-through, but requires robust lateral bracing.",
+                "roof_structure_alt": "Gable or gable-hip roof: Can work in multi-hazard context but needs extra diagonal bracing and careful detailing at roof-wall intersections; more vulnerable to typhoon wind uplift at ridge and eaves. Trade-off: Lower cost, but higher complexity and wind vulnerability.",
+                "roof_material_alt1": "Concrete slab roof (solid concrete deck): Excellent resistance to wind and water penetration; provides fireproofing and ash load capacity; too heavy unless entire structure is engineered for seismic loads; higher cost and needs excellent waterproofing membrane. Trade-off: Maximum durability, but weight and cost concerns.",
+                "roof_material_alt2": "Fiber cement or clay tile roofing: Good fire and water resistance; individual tile breakage possible in typhoons (requires tying down); heavier than metal, increases seismic demand. Trade-off: Traditional appearance, but maintenance burden from wind-damaged tiles.",
+                "columns_alt1": "Stilt or post columns (elevated support): Adds elevation for flood/surge/sea-level-rise/tsunami flow-through; requires heavy diagonal bracing for wind and seismic forces; materials must be corrosion-resistant (RC or treated timber only). Trade-off: Elevation benefit, but needs robust bracing.",
+                "columns_alt2": "Composite columns (steel + concrete): Combines concrete stiffness with steel ductility; excellent multi-hazard performance if corrosion protection is rigorously maintained (coating, epoxy); lighter than solid RC. Trade-off: Best performance, but requires professional corrosion management.",
+                "beams_alt": "Reinforced concrete (RCC) beams: Durable, fire-resistant, water-resistant; strong for ash load support; heavier mass increases seismic demand; requires good detailing for ductility. Trade-off: Simplicity and durability, but heavier than composite and needs better seismic design.",
+                "floors_alt": "Hollow core or composite floor slabs: Lighter than solid concrete; reduces overall structural weight for earthquakes; still provides good water and ash resistance; limits clear span and creates more joints. Trade-off: Weight reduction, but more complex detailing."
+            }
+        }
+    },
+    {
+        "name": "Sangat",
+        "types": ["rural", "upland"],
+        "description": "Upland rural barangay with farming activities",
+        "hazards": ["rain-landslide", "earthquake-landslide"]
+    },
+    {
+        "name": "Santa Ana",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural community vulnerable to flooding, earthquakes, volcanic ash fall, and typhoons. Structural design must address water pressure from floods, seismic forces from ground shaking, ash accumulation loads, and strong wind forces with reinforced concrete structures, elevated platforms, and secure metal roofing.",
+        "hazards": ["flood", "ground-shaking", "ashfall", "typhoon"],
+        "santa_ana_system": {
+            "systemName": "SANTA ANA - Multi-Hazard Resilient Building System",
+            "purpose": "Provide recommended building components for upland communities exposed to flooding, earthquakes, ash fall, and typhoons with emphasis on water resistance, seismic ductility, ash load capacity, and wind resistance.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use reinforced concrete shear walls as primary lateral-force system for earthquakes and typhoons with water-resistant properties for flooding",
+                "Elevate structure above flood zones with suspended floors on strong foundations to reduce water exposure and maintain structural integrity",
+                "Design hip roof with metal roofing to minimize ash traps, shed heavy rainfall, resist wind uplift, and support accumulated ash loads",
+                "Employ circular reinforced concrete columns with confinement reinforcement for equal strength in all directions under seismic and wind forces",
+                "Install tie beams to connect columns and improve overall stability for earthquakes, floods, typhoons, and heavy ash loads"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete (RC) Shear Walls with Full Reinforcement",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "columns": "Circular Reinforced Concrete Columns with Confinement Reinforcement",
+                "structural_members": "RC Tie Beams and Lintel Beams as part of integrated system",
+                "floors": "Suspended/Raised Floor with Reinforced Concrete Slab",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete anchored to stable strata"
+            },
+            "wall_systems": {
+                "primary_material": "Reinforced concrete (RC) walls - Higher cost but water-resistant (won't rot), provides rebar for earthquake ductility, heavy to resist wind and anchor roof, can carry added ash load",
+                "primary_structure": "RC Shear walls (Preferred) - Main lateral system for earthquakes and typhoons; stable if elevated/waterproofed; supports ash-loaded roof",
+                "secondary_structure": "Reinforced load-bearing walls - Workable when reinforced; heavy and wind-resistant; durable in floods",
+                "secondary_material": "Fiber cement board - Lightweight, improves ventilation, reduces wall weight; must be properly framed/braced for quake and wind",
+                "alternative_system": "Confined masonry (CHB + RC columns/tie beams) - More durable than wood in floods; better quake/typhoon performance than unreinforced masonry; supports ash loads"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip roof - Best for strong winds (reduced uplift), good drainage in heavy rain, more stable in shaking, sheds ash better than flat roofs",
+                "secondary_structure": "Dutch gable - More complex and costly; more joints create higher leak risk and ash accumulation points",
+                "primary_material": "Metal roofing - Lightweight for earthquakes, wind-resistant when properly fastened, sheds water and ash; coating helps resist acidic ash corrosion",
+                "secondary_material": "Clay tiles - Durable and fire-resistant but too heavy for earthquakes; can become projectiles in typhoons unless each tile is mechanically secured"
+            },
+            "column_systems": {
+                "primary": "Circular reinforced concrete column - Uniform strength in all directions; better under earthquakes and typhoon winds; good confinement for heavy ash roof loads; water flows around it with less force in floods",
+                "secondary": "Stilt columns - Great for flood clearance, but needs strong bracing/anchorage to avoid wind and earthquake vulnerability"
+            },
+            "beam_systems": {
+                "primary": "Tie beams - Connect columns to improve overall stability for earthquakes, floods (lateral water pressure), typhoons, and heavy ash loads; helps prevent column spreading during ground movement",
+                "secondary": "Lintel beams - Supports walls over doors/windows; important for safety at openings but doesn't stabilize the whole structure"
+            },
+            "pros": [
+                "Water-resistant reinforced concrete walls prevent rot and water infiltration",
+                "Rebar provides ductility and prevents brittle failure during earthquakes",
+                "Heavy walls provide excellent wind resistance and roof anchorage for typhoons",
+                "Hip roof geometry naturally sheds water and reduces wind uplift forces",
+                "Metal roofing is lightweight while being wind and weather resistant",
+                "Circular columns provide uniform strength and better flood flow-through",
+                "Tie beams improve overall structural stability under multiple hazards",
+                "RC Shear walls provide maximum lateral resistance to earthquakes and typhoons"
+            ],
+            "cons": [
+                "Higher material and labor costs for reinforced concrete construction",
+                "Complex construction requiring skilled workers and proper supervision",
+                "Heavy concrete structure increases seismic mass and requires good foundation design",
+                "Metal roofing requires proper fastening patterns to resist typhoon uplift",
+                "Circular columns occupy more floor space compared to square columns",
+                "Tie beams require careful detailing and reinforcement planning",
+                "Professional engineering consultation required for proper design and construction"
+            ]
+        }
+    },
+    {
+        "name": "Tabi",
+        "types": ["rural", "upland"],
+        "description": "Upland rural area with traditional farming vulnerable to flooding, earthquakes, ash fall, typhoons, soil erosion, and landslides. Structural design must address water pressure from floods, seismic forces, ash accumulation, wind forces, and slope stability with reinforced concrete systems, elevated foundations, and durable materials.",
+        "hazards": ["rain-landslide", "earthquake-landslide", "flood", "ground-shaking", "ashfall", "typhoon", "soil-erosion"],
+        "tabi_system": {
+            "systemName": "TABI - Hazard-Resilient Structural Design System",
+            "purpose": "Provide hazard-resilient structural design for traditional upland farming communities exposed to flooding, earthquakes, ash fall, typhoons, soil erosion, and landslides.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use reinforced concrete construction for maximum multi-hazard resistance combining water resistance, seismic ductility, and wind resistance",
+                "Implement pile foundations to anchor structures to stable soil layers, providing resistance to flooding, erosion, and earthquakes",
+                "Design hip roofs with metal roofing to minimize ash traps, shed heavy rainfall, resist wind uplift, and provide lightweight seismic performance",
+                "Employ circular reinforced concrete columns with tie beams to improve overall structural stability under multiple hazards",
+                "Elevate living spaces above flood zones while maintaining structural integrity through properly braced and detailed systems"
+            ],
+            "recommended_components": {
+                "floors": "Steel-Reinforced Concrete (RCC) Floor with Reinforced Concrete Floor System",
+                "walls": "Reinforced Concrete Wall System",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "columns": "Circular Reinforced Concrete Columns with confinement reinforcement",
+                "structural_members": "Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "floor_systems": {
+                "primary_material": "Steel Reinforced Concrete (RCC) - Combines concrete's compressive strength with steel's tensile strength; highly resistant to multiple hazards with steel preventing cracking during earthquakes and concrete supporting heavy ash loads",
+                "flood_resistance": "Dense, cast-in-place concrete is water-resistant; steel reinforcement adds strength (corrosion risk with prolonged flooding requires protection)",
+                "earthquake_resistance": "Steel provides ductility against tensile stresses; concrete resists compression allowing floor to withstand seismic forces",
+                "ash_resistance": "Rigid concrete surface can support heavy ash deposits without damage",
+                "typhoon_resistance": "Heavy mass resists lateral wind forces and uplift, reducing floor movement and surface damage",
+                "secondary_material": "Cement Backer Board Floor Base - Stable, rigid, fire-resistant base for floor finishes; minimizes floor movement in earthquakes; resistant to ash, debris, and wind stresses",
+                "tertiary_material": "Plain Cement Concrete Floor (PCC) - Cost-effective for moderate hazard conditions with high compressive strength but less ductility than reinforced concrete"
+            },
+            "floor_structures": {
+                "primary_structure": "Concrete Floor - Hard, dense, water-resistant, fire-resistant; reinforcement improves earthquake and wind resistance; suitable for hazard-prone areas",
+                "concrete_flood": "Resists water exposure without structural damage",
+                "concrete_seismic": "Reinforced slabs withstand moderate earthquakes with limited cracking",
+                "concrete_ash": "Dense, non-combustible surface resists ash loads and is easy to clean",
+                "concrete_wind": "Reinforced concrete floors resist uplift and lateral wind forces",
+                "secondary_structure": "Suspended Floor - Elevates living spaces above ground level offering flood protection; with proper bracing resists typhoon winds and mild seismic forces",
+                "suspended_flood": "Allows floodwaters to pass underneath safely",
+                "suspended_seismic": "Flexible supports tolerate slight ground motion when adequately braced",
+                "suspended_ash": "Elevated living areas protected though heavy ash loads require strong framing",
+                "suspended_wind": "Braced supports provide resistance to wind forces",
+                "tertiary_structure": "Timber Floor - Lightweight and flexible reducing seismic forces; durability depends on proper treatment against moisture and fire"
+            },
+            "wall_systems": {
+                "primary_structure": "Reinforced Concrete Wall System - Acts as both load-bearing and lateral force-resisting elements; effectively transfers roof and floor loads while resisting wind and earthquake forces",
+                "rc_seismic": "Serves as primary lateral load-resisting system",
+                "rc_typhoon": "Resists strong wind pressure and debris impact",
+                "rc_flood": "More moisture-resistant than lightweight wall systems",
+                "rc_ash": "Capable of supporting increased loads from ash accumulation",
+                "primary_material": "Reinforced Concrete (RC) - Fire-resistant, moisture-resistant, highly durable, and reinforced to prevent brittle earthquake failure",
+                "secondary_structure": "Confined Masonry Wall System - Uses masonry units strengthened by reinforced concrete tie beams and columns; suitable for low- to medium-rise buildings",
+                "masonry_seismic": "Reinforced ties provide moderate lateral resistance",
+                "masonry_typhoon": "Can resist moderate wind pressures if properly detailed",
+                "masonry_flood": "More durable than lightweight wall systems",
+                "masonry_ash": "Supports moderate roof loads",
+                "secondary_material": "Concrete Hollow Blocks (CHB) - Lightweight and economical; performs adequately when reinforced but less robust under extreme hazards"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof - Slopes downward on all sides creating stable aerodynamic form ideal for multi-hazard environments",
+                "hip_flood": "Efficient drainage prevents water accumulation",
+                "hip_seismic": "Symmetrical design offers stability during earthquakes",
+                "hip_ash": "Sloped surfaces allow ash to slide off reducing overload",
+                "hip_typhoon": "Aerodynamic shape minimizes uplift from strong winds",
+                "primary_material": "Metal Roofing - Lightweight, fire-resistant, smooth-surfaced, highly wind-resistant when properly installed",
+                "metal_advantages": "Non-combustible, non-porous surface resisting abrasive ash and debris; excellent wind resistance when properly fastened",
+                "secondary_structure": "Dutch Gabled Roof - Combination of hip and gable elements providing extra space but with increased complexity",
+                "dutch_flood": "Good runoff though joints increase leak risk",
+                "dutch_seismic": "Stable hipped sections but additional gable weight increases vulnerability",
+                "dutch_ash": "Complex ridges can trap ash",
+                "dutch_typhoon": "Generally strong but gable sections require reinforcement",
+                "secondary_material": "Clay Tile Roofing - Durable and fire-resistant but heavy increasing seismic forces and cost"
+            },
+            "foundation_systems": {
+                "primary_structure": "Pile Foundation - Transfers loads to deep stable soil layers providing excellent resistance to flooding, erosion, and earthquakes",
+                "pile_flood": "Loads carried to soil layers unaffected by floodwater",
+                "pile_erosion": "Reduces dependence on unstable surface soil",
+                "pile_seismic": "Minimizes differential settlement",
+                "pile_typhoon": "Resists uplift and lateral forces",
+                "pile_drought": "Limits cracking from soil shrinkage",
+                "pile_ash": "Supports additional vertical loads",
+                "primary_material": "Reinforced Concrete (RC) - High compressive and tensile strength, durable under water exposure, fire-resistant, low maintenance",
+                "secondary_structure": "Pier Foundation - Elevates structures above ground but provides less deep anchorage than piles",
+                "pier_flood": "Elevates structure above floodwaters",
+                "pier_erosion": "Reduces contact with unstable soil",
+                "pier_seismic": "Allows limited movement to reduce stress",
+                "pier_typhoon": "Moderate resistance to uplift",
+                "pier_ash": "Elevates living space above ash deposits",
+                "secondary_material": "Plain Concrete with Stone Aggregate - Economical and durable for moderate conditions but less resistant to cracking and heavy loads"
+            },
+            "beam_and_column_systems": {
+                "primary_beam": "Tie Beam - Connects columns improving overall structural integrity",
+                "tie_seismic": "Enhances seismic resistance by preventing column spread",
+                "tie_landslide": "Holds columns in alignment during soil movement",
+                "tie_ash": "Helps distribute heavy roof loads",
+                "tie_typhoon": "Stiffens entire frame against wind forces",
+                "secondary_beam": "Lintel Beam - Supports masonry above doors and windows but does not contribute significantly to overall structural resistance",
+                "primary_column": "Circular Column - Distributes forces evenly from all directions providing superior load capacity",
+                "circular_seismic": "No weak axis under seismic motion",
+                "circular_typhoon": "Smooth shape reduces wind pressure",
+                "circular_ash": "Better confinement supports heavy loads",
+                "circular_landslide": "Handles uneven soil pressure effectively",
+                "secondary_column": "Stilt Column - Elevates structures above ground but requires heavy bracing",
+                "stilt_flood": "Excellent flood protection",
+                "stilt_landslide": "Allows mudflows to pass through",
+                "stilt_seismic": "Needs additional bracing for stability",
+                "stilt_ash": "Keeps living areas away from hot ash and debris"
+            },
+            "pros": [
+                "Steel-reinforced concrete provides water resistance preventing rot and structural damage during floods",
+                "Rebar provides ductility and prevents brittle failure during earthquakes",
+                "Heavy concrete walls resist wind pressure and anchor roof during typhoons",
+                "Hip roof geometry naturally sheds water and reduces wind uplift",
+                "Metal roofing is lightweight yet durable and wind-resistant",
+                "Pile foundations anchor structure to stable soil resisting erosion and seismic settlement",
+                "Circular columns provide uniform strength and better flood flow-through",
+                "Tie beams improve structural stability under multiple hazards",
+                "Reinforced concrete resists ash accumulation loads and maintains integrity"
+            ],
+            "cons": [
+                "Higher material and labor costs for reinforced concrete construction",
+                "Complex construction requiring skilled workers and proper supervision",
+                "Heavy concrete structure increases seismic mass and requires good foundation design",
+                "Metal roofing requires proper fastening patterns to resist typhoon uplift",
+                "Circular columns occupy more floor space compared to square columns",
+                "Tie beams require careful detailing and reinforcement planning",
+                "Professional engineering consultation required for proper design and construction",
+                "Prolonged flood exposure can cause corrosion if not properly protected",
+                "Tile roofing too heavy for earthquake-prone areas"
+            ]
+        }
+    },
+    {
+        "name": "Tagaytay",
+        "types": ["rural", "upland"],
+        "description": "Elevated area with scenic views and agricultural land vulnerable to flooding, rain-induced landslides, ground shaking, ash fall, and typhoons. Structural design must address water pressure from floods, slope stability and movement, seismic forces, heavy ash accumulation, and strong wind forces with robust reinforced concrete systems and elevated platforms.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "tagaytay_system": {
+            "systemName": "TAGAYTAY - Elevated Multi-Hazard Resilient Building System",
+            "purpose": "Provide hazard-resilient structural design for elevated upland agricultural communities exposed to flooding, rain-induced landslides, earthquakes, ash fall, and typhoons.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use full reinforced concrete wall systems as primary lateral-force system for earthquakes and typhoons with water-resistant properties for flooding",
+                "Employ suspended/raised floors to reduce flood damage and allow water flow-through while maintaining structural integrity for seismic and wind loads",
+                "Design hip roofs with metal roofing to minimize ash buildup, shed heavy rainfall, resist wind uplift, and provide lightweight seismic performance",
+                "Implement either pier or pile foundations depending on site conditions, with reinforced concrete for durability and load transfer",
+                "Select composite or circular reinforced concrete columns for multi-directional strength and good performance under multiple hazards"
+            ],
+            "recommended_components": {
+                "walls": "Full Reinforced Concrete Wall (RCW) System with Shear Walls",
+                "floors": "Suspended/Raised Floor with Steel-Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing and proper fastening/bracing",
+                "foundation": "Pier or Pile Foundation with Reinforced Concrete",
+                "columns": "Composite Column (Steel + Concrete) or Circular Reinforced Concrete Column",
+                "structural_members": "Tie Beams and Lintel Beams as part of integrated system"
+            },
+            "wall_systems": {
+                "primary_material": "Full Reinforced Concrete Wall (RCW) System - Performs best overall: flood-resistant (no rot), strong when anchored for slope movement, ductile in earthquakes (rebar), resists typhoon wind pressure, and carries added ash roof loads",
+                "rc_flood": "Flood-resistant without rot or structural degradation",
+                "rc_slope_movement": "Strong anchoring resists slope movement and lateral forces",
+                "rc_seismic": "Ductile rebar prevents brittle failure during earthquakes",
+                "rc_typhoon": "Resists strong wind pressure and debris impact",
+                "rc_ash": "Can carry added ash roof loads without failure",
+                "primary_structure": "Shear Walls (Preferred) - Best for earthquake and typhoon lateral resistance; good performance when waterproofed and properly anchored",
+                "secondary_structure": "Load-bearing Walls - Only okay if well-founded and reinforced; otherwise risky in earthquakes",
+                "secondary_material": "Fiber Cement Board - Lightweight and durable for interior/upper walls; must be properly framed/braced for quake and wind safety"
+            },
+            "floor_systems": {
+                "primary_structure": "Suspended/Raised Floor - Elevation reduces flood damage; works well for quakes/typhoons/ash if engineered with RC/composite deck and strong bracing/anchorage",
+                "suspended_flood": "Elevation reduces flood damage and allows water flow-through",
+                "suspended_seismic": "Can work well for earthquakes if engineered with strong bracing and anchorage",
+                "suspended_wind": "Good performance for typhoons with proper design",
+                "suspended_ash": "Elevated living spaces protected from ash deposits",
+                "primary_material": "Steel-Reinforced Concrete Slab - Water-resistant, non-combustible, easy to clean after ash; ductile in earthquakes; heavy and stable when well anchored against wind uplift",
+                "rcc_slab_flood": "Water-resistant without structural damage",
+                "rcc_slab_seismic": "Ductile in earthquakes with proper detailing",
+                "rcc_slab_ash": "Easy to clean after ash fall; non-combustible surface",
+                "rcc_slab_wind": "Heavy and stable when well anchored against uplift",
+                "secondary_structure": "Composite Floor - Very good seismic/diaphragm performance but costly and detail-sensitive; steel needs corrosion protection",
+                "secondary_material": "Hollow Core Slab (Precast) - Lighter and fast to install but weaker seismic performance due to connection/support issues; depends heavily on detailing"
+            },
+            "foundation_systems": {
+                "primary_structure_option_1": "Pier Foundation - Elevates above floodwater, reduces soil disturbance on slopes, can reduce quake stress due to independent piers; needs good bracing for typhoons",
+                "pier_flood": "Elevates above floodwater with reduced inundation exposure",
+                "pier_slope": "Reduces soil disturbance on slopes",
+                "pier_seismic": "Can reduce quake stress due to independent pier action",
+                "pier_typhoon": "Needs good bracing for typhoon resistance",
+                "primary_structure_option_2": "Pile Foundation - Deeper anchorage to stable strata better for unstable soils, floods, and seismic settlement control; strong for wind uplift/lateral demands",
+                "pile_unstable_soil": "Better performance in unstable soils and slopes",
+                "pile_flood": "Provides deep anchorage resisting scour and erosion",
+                "pile_seismic": "Better control of seismic settlement",
+                "pile_wind": "Strong resistance to wind uplift and lateral forces",
+                "primary_material": "Reinforced Concrete (Preferred) - Strongest and most reliable under water exposure, earthquakes, and heavy loads",
+                "secondary_material": "Stone (Alternative) - Durable and strong in compression, but performance depends on proper bonding/workmanship and drainage"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof - Best for typhoons (reduced uplift), sheds rain well, stable during shaking, and helps prevent dangerous ash buildup",
+                "hip_typhoon": "Reduced uplift forces from all directions",
+                "hip_flood": "Sheds rain well preventing water accumulation",
+                "hip_seismic": "Stable geometry during ground shaking",
+                "hip_ash": "Prevents dangerous ash buildup on roof surface",
+                "primary_material": "Metal Roofing (Preferred) - Lightweight (better in quakes), wind-resistant when properly fastened, sheds rain/ash; coating helps resist acidic ash corrosion",
+                "metal_seismic": "Lightweight reduces seismic mass and demand",
+                "metal_wind": "Wind-resistant when properly fastened with appropriate patterns",
+                "metal_ash": "Sheds ash effectively; coating resists acidic corrosion",
+                "metal_flood": "Allows water drainage and shedding",
+                "secondary_structure": "Dutch Gable - More complex and costly; more joints create higher leak risk and ash accumulation points",
+                "secondary_material": "Clay Tiles (Secondary) - Durable and fire-resistant but too heavy for earthquakes; can become windborne debris unless fully clipped/wired"
+            },
+            "column_systems": {
+                "primary_option_1": "Composite Column (Steel + Concrete) - Best overall balance: ductile in quakes/typhoons; concrete protects steel; high load capacity for ash",
+                "composite_seismic": "Ductile in earthquakes with combined steel and concrete action",
+                "composite_typhoon": "Good wind resistance with composite strength",
+                "composite_ash": "High load capacity for accumulated ash loads",
+                "composite_durability": "Concrete protection prevents steel corrosion",
+                "primary_option_2": "Circular Reinforced Concrete Column - Strong, stable in all directions, typically the least expensive option",
+                "circular_seismic": "Strong in all directions for earthquake forces",
+                "circular_wind": "Uniform strength resists typhoon wind from any direction",
+                "circular_ash": "Good capacity for ash loads",
+                "circular_cost": "Most economical option among recommended choices",
+                "secondary_option": "Pile-Supported Stilt RC Column System - Highest elevation and deep anchorage (best where flooding is extreme) but most expensive and needs strong lateral bracing",
+                "stilt_flood": "Highest elevation for extreme flood conditions",
+                "stilt_anchorage": "Deep pile support provides excellent stability",
+                "stilt_cost": "Most expensive column option",
+                "stilt_bracing": "Requires strong lateral bracing for wind and seismic"
+            },
+            "pros": [
+                "Full RC wall systems provide water resistance, earthquake ductility, and wind resistance",
+                "Suspended floors reduce flood damage while maintaining structural integrity",
+                "Steel-reinforced concrete slabs are durable, non-combustible, and easy to maintain",
+                "Hip roofs naturally shed water and ash while resisting wind uplift",
+                "Metal roofing is lightweight yet durable and wind-resistant",
+                "Pier or pile foundations provide elevation and deep anchorage depending on site conditions",
+                "Composite columns offer best balance of ductility, durability, and load capacity",
+                "Circular RC columns provide uniform strength at lower cost",
+                "RC shear walls provide maximum lateral resistance for earthquakes and typhoons",
+                "Elevated design reduces exposure to floods and debris"
+            ],
+            "cons": [
+                "Reinforced concrete construction has higher material and labor costs",
+                "Complex construction requiring skilled workers and proper supervision",
+                "Suspended floors require strong bracing and careful engineering",
+                "Composite columns need corrosion protection for steel components",
+                "Metal roofing requires proper fastening patterns for typhoon resistance",
+                "Hip roofs more complex than gable designs",
+                "Professional engineering consultation essential for proper design",
+                "Pile foundations more expensive than pier alternatives",
+                "Precast elements require expert assembly and detailing",
+                "Heavier structures increase seismic mass demanding good design"
+            ]
+        }
+    },
+    {
+        "name": "Tigkiw",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural community vulnerable to flooding, rain-induced and earthquake-induced landslides, soil erosion, ground shaking, typhoons, ash fall, and drought. Structural design must address water pressure from floods, slope instability and movement, seismic forces, wind forces, ash accumulation, and drought-related soil shrinkage with deep pile foundations and reinforced concrete systems.",
+        "hazards": ["flood", "rain-landslide", "earthquake-landslide", "soil-erosion", "ground-shaking", "typhoon", "ashfall", "drought"],
+        "tigkiw_system": {
+            "systemName": "TIGKIW - Multi-Hazard Landslide and Flood Resilient Building System",
+            "purpose": "Provide hazard-resilient structural design for upland agricultural communities exposed to flooding, landslides, earthquakes, soil erosion, typhoons, ash fall, and drought conditions.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use deep pile foundations anchored to stable soil layers to reduce settlement/sliding and resist lateral forces from earthquakes and typhoons",
+                "Implement reinforced concrete wall systems as load-bearing and lateral-force resisting elements for durability in floods and earthquakes",
+                "Employ suspended floors elevated above floodwater and unstable ground with reinforced concrete slabs for structural strength and crack resistance",
+                "Design hip roofs with metal roofing for wind resistance, drainage, ash shedding, and lightweight seismic performance",
+                "Install reinforced concrete stilt columns with diagonal bracing and tie/ring beams to create monolithic continuous frames resisting multiple hazards"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "walls": "Reinforced Concrete Wall System (Structure + Material)",
+                "floors": "Suspended Floor with Reinforced Concrete Slab",
+                "roof": "Hip Roof with Metal Roofing",
+                "columns": "Reinforced Concrete Stilt Columns (Circular or Square) with Diagonal Bracing",
+                "structural_members": "Reinforced Concrete Beams with Tie/Ring Beams"
+            },
+            "foundation_systems": {
+                "primary_structure": "Pile Foundation - Deep anchorage to stable layers to reduce settlement/sliding; resists scour/erosion and lateral loads from quakes/typhoons; supports added ash load; reduces cracking from drought-related soil movement",
+                "pile_settlement": "Deep anchorage reduces settlement in unstable ground",
+                "pile_landslide": "Resists sliding and lateral ground movement",
+                "pile_scour": "Resists scour and erosion during floods",
+                "pile_seismic": "Resists lateral loads from earthquakes",
+                "pile_typhoon": "Resists lateral and uplift forces from typhoons",
+                "pile_ash": "Supports added ash load on structure",
+                "pile_drought": "Reduces cracking from drought-related soil shrinkage",
+                "primary_material": "Reinforced Concrete - High compressive and tensile strength, durable under water exposure, supports heavy loads, reduces settlement",
+                "secondary_structure": "Pier Foundation - Less stable than piles under strong seismic and lateral loads; elevates structure but provides less deep anchorage",
+                "secondary_material": "Plain Concrete with Stone Aggregate - Good in compression but weaker in earthquakes due to lack of steel reinforcement"
+            },
+            "wall_systems": {
+                "primary_structure": "Reinforced Concrete Wall System (Structure + Material) - Acts as load-bearing and lateral-force system; durable in floods/moisture; resists wind/debris; improves stability during earthquakes and slope movement; supports ash-related roof loads",
+                "rc_load_bearing": "Primary load-bearing element for roof and floor systems",
+                "rc_lateral_force": "Acts as lateral-force resisting system for earthquakes and typhoons",
+                "rc_flood_durability": "Durable in floods and moisture exposure without rot",
+                "rc_wind_resistance": "Resists wind pressure and debris impact",
+                "rc_slope_stability": "Improves stability during earthquakes and slope movement",
+                "rc_ash_loads": "Supports added ash-related roof loads",
+                "secondary_structure": "Confined Masonry (CHB + RC Tie Beams/Columns) - More economical, moderate performance, but more crack-prone and less ductile than full RC",
+                "secondary_material": "Concrete Hollow Blocks (CHB) - Lightweight and economical but less robust under extreme hazards"
+            },
+            "floor_systems": {
+                "primary_structure": "Suspended Floor - Elevates living space above floodwater/unstable ground; lighter seismic demand than slab-on-grade; allows drainage/ventilation",
+                "suspended_flood": "Elevates above floodwater with drainage underneath",
+                "suspended_unstable": "Reduces direct contact with unstable ground",
+                "suspended_seismic": "Lighter than slab-on-grade reducing seismic mass",
+                "suspended_ventilation": "Allows drainage and ventilation underneath",
+                "primary_material": "Reinforced Concrete Slab - Strong, fire/moisture resistant, and crack-resistant when reinforced",
+                "rc_slab_strength": "Strong resistance to loads and lateral forces",
+                "rc_slab_fire": "Fire-resistant non-combustible material",
+                "rc_slab_moisture": "Moisture-resistant without rot or degradation",
+                "rc_slab_crack": "Crack-resistant when properly reinforced and detailed",
+                "secondary_structure": "Slab-on-Grade - Durable but more flood-exposed; joints/connections can be vulnerable in strong earthquakes",
+                "secondary_material": "Precast Concrete Slab - Faster installation but connections can be vulnerable in earthquakes"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof - Highly wind-resistant, stable under shaking, drains heavy rain well, and sheds ash",
+                "hip_wind": "Highly wind-resistant to typhoon forces from all directions",
+                "hip_seismic": "Stable geometry during earthquake ground shaking",
+                "hip_drainage": "Drains heavy rain effectively preventing accumulation",
+                "hip_ash": "Sheds ash effectively reducing roof load and fire risk",
+                "primary_material": "Metal Roofing - Lightweight for earthquakes, non-combustible for ash fall, waterproof, and typhoon-resistant when properly fastened",
+                "metal_seismic": "Lightweight reduces seismic mass and demand",
+                "metal_ash": "Non-combustible and ash-resistant with protective coating",
+                "metal_water": "Waterproof with excellent drainage properties",
+                "metal_typhoon": "Typhoon-resistant when properly fastened to structure",
+                "secondary_structure": "Dutch Gable Roof - More complex with higher leak risk and ash-trap points; requires more maintenance",
+                "secondary_material": "Clay Tiles - Too heavy for earthquakes and can become projectiles unless fully secured"
+            },
+            "column_systems": {
+                "primary_option": "Reinforced Concrete Stilt Columns (Circular or Square) with Diagonal Bracing - Elevation for flood protection; RC provides durability and fire resistance; requires diagonal bracing and strong connections to resist wind and quake forces",
+                "stilt_flood": "Elevation provides flood protection with water flow-through",
+                "stilt_durability": "RC provides durability and fire resistance",
+                "stilt_wind": "Diagonal bracing resists wind forces",
+                "stilt_seismic": "Strong connections resist earthquake forces",
+                "stilt_circular": "Circular shape provides uniform strength in all directions",
+                "stilt_square": "Square shape allows flexible interior layout",
+                "secondary_option": "Steel Column - Strong and ductile but needs ongoing corrosion protection, fire protection, and ash-fall protection"
+            },
+            "beam_systems": {
+                "primary_beam": "Reinforced Concrete Beams with Tie/Ring Beams - Monolithic continuous frame; tie beams link columns to prevent spreading/failure during uneven ground movement and earthquakes; provides rigidity for typhoon loads and durability under flooding/ash",
+                "monolithic_frame": "Creates monolithic continuous frame for structural integrity",
+                "tie_beam_function": "Links columns preventing spreading during earthquakes and ground movement",
+                "tie_beam_stability": "Prevents column failure during uneven ground movement",
+                "tie_beam_wind": "Provides rigidity for typhoon wind loads",
+                "tie_beam_durability": "RC durability under flooding and ash loads",
+                "secondary_option": "Lintel Beams - Supports masonry above doors/windows but does not provide overall structural integration"
+            },
+            "pros": [
+                "Pile foundations provide deep anchorage resisting settlement, sliding, and lateral forces",
+                "Reinforced concrete wall systems are durable in floods and earthquakes",
+                "Suspended floors reduce flood damage and unstable ground contact",
+                "Steel-reinforced concrete slabs are strong, fire-resistant, and crack-resistant",
+                "Hip roofs resist wind and shed water/ash effectively",
+                "Metal roofing is lightweight yet durable and corrosion-resistant",
+                "RC stilt columns provide elevation with durability and fire resistance",
+                "Diagonal bracing and tie beams create integrated frame resisting multiple hazards",
+                "System addresses all eight major hazards comprehensively",
+                "Elevated design protects living spaces from floods and unstable ground"
+            ],
+            "cons": [
+                "Reinforced concrete construction has higher material and labor costs",
+                "Deep pile foundations are more expensive than pier alternatives",
+                "Complex construction requiring skilled workers and proper supervision",
+                "Suspended floors require strong bracing and careful engineering",
+                "Metal roofing requires proper fastening patterns for typhoon resistance",
+                "Stilt columns with diagonal bracing add construction complexity",
+                "Professional engineering consultation essential for proper design",
+                "Tie beams require careful detailing and reinforcement planning",
+                "Hip roofs more complex than gable designs",
+                "System requires continuous maintenance and inspection"
+            ]
+        }
+    },
+    {
+        "name": "Tiris",
+        "types": ["coastal", "upland", "rural"],
+        "description": "Mixed coastal-upland-rural area vulnerable to flooding, rain-induced landslides, storm surge, sea level rise, ground shaking, ash fall, and typhoons. Structural design must address water pressure from floods and surge, slope instability, seismic forces, wind forces, ash accumulation, and coastal salt exposure with elevated stilt foundations and robust reinforced concrete systems.",
+        "hazards": ["flood", "rain-landslide", "storm-surge", "sea-level-rise", "ground-shaking", "ashfall", "typhoon"],
+        "tiris_system": {
+            "systemName": "TIRIS - Coastal-Upland Multi-Hazard Resilient Building System",
+            "purpose": "Provide hazard-resilient structural design for mixed coastal-upland-rural communities exposed to flooding, landslides, storm surge, sea level rise, earthquakes, ash fall, and typhoons.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer with coastal and slope stability expertise following applicable codes.",
+            "design_approach": [
+                "Use stilt foundations to elevate structures allowing floodwater/surge/debris flow to pass underneath providing best direct protection for compound water hazards",
+                "Implement reinforced concrete stilt columns in ductile moment-resisting frames designed to bend during earthquakes while resisting wind forces",
+                "Create continuous beam and tie/ring beam systems forming unified frames distributing forces and preventing joint failures",
+                "Design hip roofs with metal roofing for optimal performance in wind, shedding water and ash, and stable seismic behavior",
+                "Employ reinforced concrete shear walls as primary lateral-force resisting system with waterproof non-combustible properties for flood and wind exposure"
+            ],
+            "recommended_components": {
+                "foundation": "Stilt Foundation with Reinforced Concrete",
+                "columns": "Reinforced Concrete Stilt Columns in Ductile Moment-Resisting Frame",
+                "beams": "Continuous Beams with Integral Tie/Ring Beams (Diaphragm System)",
+                "floors": "Suspended (Elevated) Floor with Cast-in-Place Steel-Reinforced Concrete Slab",
+                "walls": "Reinforced Concrete Shear Walls",
+                "roof": "Hip Roof with Metal Roofing"
+            },
+            "foundation_systems": {
+                "primary_structure": "Stilt Foundation - Elevates the house so floodwater/surge/debris flow pass underneath (best direct protection for flood + surge + sea level rise); needs strong bracing and ductile detailing because elevation increases wind demand in typhoons",
+                "stilt_flood": "Elevates above floodwater with full water passage underneath",
+                "stilt_surge": "Elevation protects from storm surge and debris impact",
+                "stilt_sea_level": "Accommodates sea level rise with elevation strategy",
+                "stilt_wind": "Requires strong bracing and ductile detailing for typhoon wind forces",
+                "stilt_elevation": "Core protection mechanism for water-related hazards",
+                "primary_material": "Reinforced Concrete - Durable in wet/saline exposure, non-combustible, can be detailed for seismic ductility",
+                "rc_saline": "Durable in salt-water exposure with proper corrosion protection",
+                "rc_fire": "Non-combustible providing fire resistance",
+                "rc_seismic": "Can be detailed for seismic ductility in moment frames",
+                "secondary_structure": "Pile Foundation - Deep anchorage to stable soil/rock; excellent for flood and slope instability, but costlier/less practical as full residential system",
+                "secondary_material": "Precast Concrete Piles - Fast installation and controlled quality but joints are weak points under earthquakes/uneven ground movement"
+            },
+            "column_systems": {
+                "primary_structure": "Stilt Columns in Ductile Moment-Resisting Frame - Core elevation element; designed to bend (not break) during earthquakes; must be part of fully braced wind system for typhoons",
+                "stilt_elevation": "Core element providing water hazard protection through elevation",
+                "stilt_ductility": "Designed to bend without breaking during earthquakes",
+                "stilt_seismic": "Moment frame provides seismic ductility and energy dissipation",
+                "stilt_wind": "Must be part of fully braced wind system for typhoon resistance",
+                "stilt_bracing": "Requires comprehensive bracing for lateral wind and seismic forces",
+                "secondary_structure": "Braced Steel Frame Columns - Strong for wind and seismic but corrosion and fire protection needs make it less suitable especially in flood/surge environments",
+                "steel_corrosion": "Requires ongoing corrosion protection in coastal salt-spray environment",
+                "steel_fire": "Needs fireproofing for ash fall protection"
+            },
+            "beam_systems": {
+                "primary_system": "Continuous Beams with Integral Tie/Ring Beams (Diaphragm System) - Creates unified frame; excellent for earthquakes and typhoons by distributing forces and preventing joint failures",
+                "continuous_frame": "Creates unified monolithic frame action",
+                "force_distribution": "Distributes forces across entire frame reducing stress concentration",
+                "joint_integrity": "Prevents joint failures during earthquakes and wind loading",
+                "diaphragm_action": "Acts as rigid diaphragm for load distribution",
+                "earthquake_performance": "Excellent for earthquake force distribution",
+                "typhoon_performance": "Excellent for typhoon wind load distribution",
+                "secondary_system": "Steel I-Beams - Can be excellent structurally but corrosion at beams/connections and fireproofing needs are major drawbacks",
+                "steel_corrosion": "Corrosion at beams and connections in salt-water environment",
+                "steel_fireproofing": "Requires fireproofing for ash fall and fire protection"
+            },
+            "floor_systems": {
+                "primary_structure": "Suspended (Elevated) Floor - Forms the dry living deck above water; must act as rigid diaphragm and be strongly tied down for typhoon uplift",
+                "suspended_elevation": "Provides dry living deck above potential water levels",
+                "suspended_diaphragm": "Must act as rigid diaphragm for earthquake load transfer",
+                "suspended_uplift": "Must be strongly tied down for typhoon uplift resistance",
+                "suspended_water": "Protects living spaces from water exposure",
+                "primary_material": "Cast-in-Place Steel-Reinforced Concrete Slab - Fireproof, water-resistant, strong diaphragm; excellent in quakes, supports ash loads, resists uplift when well anchored",
+                "rc_slab_fire": "Fireproof protection for ash fall and fire hazards",
+                "rc_slab_water": "Water-resistant without rot or degradation",
+                "rc_slab_diaphragm": "Strong rigid diaphragm for earthquake load distribution",
+                "rc_slab_ash": "Supports accumulated ash loads",
+                "rc_slab_uplift": "Resists uplift when well anchored to supporting structure",
+                "secondary_structure": "Composite Floor (Concrete on Steel Deck) - Good diaphragm/ductility but expensive and corrosion/detail-sensitive",
+                "secondary_material": "Hollow Core Slab - Easy and lighter but poor seismic connection/shear performance and corrosion risk in prestressing strands especially in coastal environment"
+            },
+            "wall_systems": {
+                "primary_structure": "Reinforced Concrete Shear Walls - Main lateral system for earthquakes and typhoons; should be waterproof/non-combustible where exposed",
+                "shear_walls_lateral": "Main lateral load-resisting system for seismic and wind forces",
+                "shear_walls_earthquake": "Provides primary earthquake resistance",
+                "shear_walls_typhoon": "Provides primary typhoon wind resistance",
+                "shear_walls_waterproof": "Non-combustible and waterproof where exposed to water",
+                "primary_material": "Reinforced Concrete Walls - Best for debris impact, wind pressure, quake resistance (when detailed), and ash/fire resistance",
+                "rc_walls_debris": "Excellent resistance to debris impact from surge/winds",
+                "rc_walls_wind": "Resists wind pressure from typhoons",
+                "rc_walls_seismic": "Excellent when properly detailed for earthquakes",
+                "rc_walls_ash": "Ash and fire resistant with non-combustible properties",
+                "secondary_structure": "Cavity Walls (Around Separate Frame) - Good for moisture/thermal control but not primary wind/seismic system; depends on hidden structural frame",
+                "secondary_material": "Fiber Cement Board on Steel Frame - Lightweight and fire/termite resistant but non-structural, weak to debris impact, and steel framing can corrode"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof - Best all-around: sheds rain and ash, stable in quakes, excellent typhoon wind performance (low uplift vs gable ends)",
+                "hip_drainage": "Sheds rain effectively preventing water accumulation",
+                "hip_ash": "Sheds ash effectively reducing roof load",
+                "hip_seismic": "Stable geometry during earthquake shaking",
+                "hip_wind": "Excellent typhoon wind performance with low uplift forces",
+                "hip_aerodynamic": "Aerodynamic form reduces wind pressure",
+                "primary_material": "Metal Roofing - Lightweight, wind-resistant when properly fastened, fireproof, sheds water/ash well, corrosion-resistant coating handles acidic ash",
+                "metal_lightweight": "Lightweight reduces seismic mass and demands",
+                "metal_wind": "Wind-resistant when properly fastened to hip roof frame",
+                "metal_fire": "Non-combustible fireproof protection",
+                "metal_drainage": "Sheds water and ash effectively",
+                "metal_corrosion": "Corrosion-resistant coating handles acidic ash and coastal salt spray",
+                "secondary_structure": "Curved Roof - Aerodynamic and sheds water/ash well but complex and costly",
+                "secondary_material": "Clay Tiles - Durable but heavy increasing seismic mass and can become projectiles in high winds"
+            },
+            "pros": [
+                "Stilt foundations provide best direct protection for compound water hazards (flood, surge, sea level rise)",
+                "Elevated design keeps living spaces dry and above debris/water levels",
+                "Ductile moment-resisting frames bend during earthquakes without breaking",
+                "Continuous beams and tie/ring beams create unified frames resisting multiple hazards",
+                "Reinforced concrete provides durability in wet and saline coastal environment",
+                "Shear walls provide excellent lateral resistance to earthquakes and typhoons",
+                "Metal roofing is lightweight, durable, and wind-resistant",
+                "Hip roof geometry provides optimal performance for wind, water, and ash shedding",
+                "Suspended elevated floor forms dry living deck above water levels",
+                "System comprehensively addresses seven major hazards"
+            ],
+            "cons": [
+                "Stilt foundations more expensive than traditional foundations",
+                "Elevation increases exposure to wind forces requiring strong bracing",
+                "Ductile moment-resisting frames more complex than simple systems",
+                "Continuous beams and tie/ring beams require careful engineering detailing",
+                "Reinforced concrete construction has higher material and labor costs",
+                "Metal roofing requires proper fastening patterns for typhoon resistance",
+                "Corrosion protection essential for coastal salt-spray environment",
+                "Professional engineering consultation essential for proper design",
+                "Complex construction requiring skilled workers and proper supervision",
+                "System requires continuous maintenance and inspection especially in coastal areas"
+            ]
+        }
+    },
+    {
+        "name": "Togawe",
+        "types": ["rural", "upland"],
+        "description": "Mountainous barangay with cool climate and farming vulnerable to rain-induced landslides, earthquake-induced landslides, ground shaking, and ash fall. Structural design must address slope instability, lateral ground movement, seismic forces, and heavy ash accumulation with deep foundations, reinforced concrete systems, and steeply sloped roofs for ash shedding.",
+        "hazards": ["rain-landslide", "earthquake-landslide", "ground-shaking", "ashfall"],
+        "togawe_system": {
+            "systemName": "TOGAWE - Mountainous Hazard-Resilient Building System",
+            "purpose": "Provide hazard-resilient structural design for mountainous upland communities exposed to rain-induced landslides, earthquake-induced landslides, ground shaking, and volcanic ash fall.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use deep pile foundations anchored to stable rock layers to bypass unstable slopes and resist lateral ground movement",
+                "Implement reinforced concrete wall systems and shear walls as primary lateral-force resisting elements for earthquake stability",
+                "Employ steeply sloped hip or gabled roofs to maximize ash shedding and prevent dangerous accumulation on roof surfaces",
+                "Design lightweight metal roofing to minimize seismic mass while being non-combustible and weather-resistant",
+                "Install reinforced concrete columns with diagonal bracing and tie/ring beams for monolithic frame action resisting multiple hazards"
+            ],
+            "recommended_components": {
+                "foundation": "Pile Foundation with Reinforced Concrete",
+                "walls": "Reinforced Concrete Shear Walls with Full Reinforcement",
+                "roof": "Hip or Gabled Roof with Metal Roofing (Steeply Sloped for Ash Shedding)",
+                "columns": "Reinforced Concrete Columns with Diagonal Bracing",
+                "floors": "Steel-Reinforced Concrete Floor with Strong Anchorage",
+                "structural_members": "Reinforced Concrete Beams with Tie/Ring Beams"
+            },
+            "foundation_systems": {
+                "primary_structure": "Pile Foundation - Deep anchorage to stable rock layers bypasses unstable slopes and resists lateral ground movement from landslides and earthquakes",
+                "pile_landslide": "Deep anchorage bypasses unstable surface slopes affected by landslides",
+                "pile_ground_movement": "Resists lateral forces from slope movement and earthquakes",
+                "pile_seismic": "Minimizes settlement and differential movement during earthquakes",
+                "pile_ash": "Supports added loads from ash accumulation on structure",
+                "primary_material": "Reinforced Concrete - High compressive and tensile strength, durable, and provides both stability and load capacity",
+                "rc_strength": "Excellent strength for both compression and tension from seismic forces",
+                "rc_durability": "Durable in high-altitude cool climate with proper detailing",
+                "secondary_structure": "Pier Foundation - Elevates structure but provides less deep anchorage than piles for extreme slope conditions",
+                "secondary_material": "Stone Foundation - Durable and strong in compression if well-bonded and properly drained in mountain environment"
+            },
+            "wall_systems": {
+                "primary_structure": "Reinforced Concrete Shear Walls with Full Reinforcement - Main lateral-force resisting system for earthquakes and landslide-induced forces",
+                "shear_walls_lateral": "Primary lateral load-resisting system for seismic and ground movement forces",
+                "shear_walls_earthquake": "Provides excellent earthquake resistance with ductility",
+                "shear_walls_landslide": "Resists lateral forces from slope movement and soil pressure",
+                "shear_walls_ash": "Capable of supporting heavy ash accumulation loads on roof",
+                "primary_material": "Reinforced Concrete Walls - Durable in mountain environment, fire-resistant, moisture-resistant, and provides seismic ductility",
+                "rc_walls_durability": "Durable in cool mountain climate without rot or deterioration",
+                "rc_walls_fire": "Non-combustible providing fire resistance against ash-related risks",
+                "rc_walls_seismic": "Excellent seismic performance when properly detailed with reinforcement",
+                "secondary_structure": "Confined Masonry (CHB + RC Tie Beams/Columns) - More economical but less robust in extreme seismic events",
+                "secondary_material": "Concrete Hollow Blocks (CHB) - Lightweight and economical but requires careful reinforcement for landslide areas"
+            },
+            "floor_systems": {
+                "primary_structure": "Steel-Reinforced Concrete Floor - Strong, durable, provides good diaphragm action for lateral load distribution",
+                "rc_floor_strength": "Strong resistance to loads and forces from earthquakes and ground movement",
+                "rc_floor_diaphragm": "Good diaphragm action for distributing seismic forces",
+                "rc_floor_ash": "Can support heavy accumulated ash loads without structural damage",
+                "primary_material": "Steel-Reinforced Concrete Slab - Water-resistant, non-combustible, fire-resistant, and durable in mountain environment",
+                "rcc_slab_durability": "Durable in high-altitude cool climate",
+                "rcc_slab_fire": "Non-combustible fire-resistant properties",
+                "rcc_slab_moisture": "Moisture-resistant in high-rainfall mountain areas",
+                "secondary_structure": "Composite Floor - Good diaphragm action but more expensive and requires careful detailing in seismic areas",
+                "secondary_material": "Precast Concrete Slab - Faster installation but joints can be vulnerable in earthquakes"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip or Gabled Roof with Steep Slope - Designed to maximize ash shedding and prevent dangerous accumulation; steep slopes redirect ash fall",
+                "steep_slope": "Steep slope (30-40°) maximizes ash shedding preventing accumulation",
+                "hip_structure": "Hip roof provides excellent wind stability and ash drainage",
+                "gabled_structure": "Gabled roof allows for greater slope angle but requires wind bracing",
+                "roof_ash": "Primary design feature to address ash fall hazard through gravity shedding",
+                "roof_seismic": "Steep geometry provides stable form during earthquakes",
+                "roof_drainage": "Steep slope provides excellent water drainage in high-rainfall mountain areas",
+                "primary_material": "Metal Roofing - Lightweight for seismic mass reduction, non-combustible for ash/fire protection, durable in mountain weather",
+                "metal_lightweight": "Lightweight reduces seismic mass and demands on structure",
+                "metal_noncombustible": "Non-combustible protection against ash fall and fire risks",
+                "metal_durable": "Durable in high-altitude exposed mountain environment",
+                "metal_ash": "Smooth surface allows ash to slide off easily with steep slope",
+                "secondary_structure": "Curved Roof - Aerodynamic and sheds ash well but complex and costly for mountain construction",
+                "secondary_material": "Clay Tiles - Too heavy for earthquake-prone areas increasing seismic demand"
+            },
+            "column_systems": {
+                "primary_option": "Reinforced Concrete Columns with Diagonal Bracing - Provides both vertical load support and lateral bracing for wind and seismic forces in steep terrain",
+                "rc_columns_load": "Vertical support for roof and floor systems",
+                "rc_columns_lateral": "Resists lateral forces from earthquakes and wind",
+                "rc_columns_bracing": "Diagonal bracing provides additional lateral stability",
+                "rc_columns_durability": "RC provides durability in mountain climate",
+                "secondary_option": "Steel Columns - Strong and ductile but require ongoing corrosion protection in high-altitude wet environment"
+            },
+            "beam_systems": {
+                "primary_system": "Reinforced Concrete Beams with Tie/Ring Beams - Creates monolithic frame action distributing forces and preventing joint failures during seismic events and ground movement",
+                "monolithic_frame": "Creates unified frame for force distribution",
+                "tie_beams_function": "Links columns preventing spreading during earthquakes",
+                "tie_beams_stability": "Prevents column failure during uneven ground movement",
+                "tie_beams_durability": "RC durability in mountain environment",
+                "secondary_system": "Steel Beams - Can be excellent structurally but corrosion in high-altitude wet climate is a concern"
+            },
+            "pros": [
+                "Deep pile foundations provide excellent anchorage in unstable mountain slopes",
+                "Reinforced concrete shear walls provide primary earthquake and landslide resistance",
+                "Steeply sloped roofs prevent dangerous ash accumulation reducing load and fire risk",
+                "Metal roofing is lightweight yet durable and non-combustible",
+                "RC columns with diagonal bracing provide lateral stability in mountain terrain",
+                "Tie/ring beams create monolithic frames resisting multiple hazards",
+                "System addresses all four major mountain hazards comprehensively",
+                "Steel-reinforced concrete floors are strong and durable in cool mountain climate",
+                "Mountain-specific design optimizes ash shedding and slope stability",
+                "Reduced seismic mass from lightweight roofing improves earthquake performance"
+            ],
+            "cons": [
+                "Deep pile foundations expensive and challenging in rocky mountain terrain",
+                "Reinforced concrete construction requires skilled labor and careful detailing",
+                "Steeply sloped roofs more complex and costly than standard designs",
+                "Metal roofing requires proper fastening patterns for wind resistance",
+                "Diagonal bracing on columns adds construction complexity",
+                "Professional engineering consultation essential for slope stability assessment",
+                "High-altitude construction challenges may affect accessibility and costs",
+                "Tie/ring beams require careful detailing for proper force transfer",
+                "Continuous maintenance required in exposed mountain environment",
+                "Cool wet mountain climate increases need for corrosion protection"
+            ]
+        }
+    },
+    {
+        "name": "Union",
+        "types": ["rural", "upland"],
+        "description": "Upland community with agricultural activities vulnerable to flooding, rain-induced landslides, ground shaking, ash fall, and typhoons. Structural design must address water pressure from floods, slope instability and movement, seismic forces, ash accumulation, and strong wind forces with reinforced concrete systems, elevated platforms, and comprehensive hazard resistance.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "union_system": {
+            "systemName": "UNION - Multi-Hazard Upland Community Resilient Building System",
+            "purpose": "Provide hazard-resilient structural design for upland agricultural communities exposed to flooding, rain-induced landslides, earthquakes, ash fall, and typhoons.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Use full reinforced concrete wall systems with shear walls as primary lateral-force resisting elements for earthquakes and typhoons",
+                "Implement suspended/raised floors to reduce flood impacts while providing lightweight earthquake performance with strong bracing",
+                "Employ either pier or pile foundations depending on site conditions with reinforced concrete for durability and load transfer",
+                "Design hip roofs with metal roofing for wind resistance, water drainage, ash shedding, and lightweight seismic behavior",
+                "Select composite or circular reinforced concrete columns with proper anchorage for multi-directional strength and stability"
+            ],
+            "recommended_components": {
+                "walls": "Full Reinforced Concrete Wall System (RCW) with Shear Walls",
+                "floors": "Suspended/Raised Floor with Steel-Reinforced Concrete Slab",
+                "foundation": "Pier or Pile Foundation with Reinforced Concrete",
+                "roof": "Hip Roof with Metal Roofing",
+                "columns": "Composite Steel + Concrete or Circular Reinforced Concrete Columns",
+                "structural_members": "Reinforced Concrete Beams with Strong Anchorage"
+            },
+            "wall_systems": {
+                "primary_material": "Full Reinforced Concrete Wall System (RCW) - Flood-resistant (won't rot), ductile in earthquakes (rebar), strong against typhoon winds/roof uplift, supports ash roof loads; performs better on slopes when well-anchored and paired with slope protection/retaining works",
+                "rc_flood": "Flood-resistant without rot or structural degradation",
+                "rc_seismic": "Ductile rebar provides flexibility and prevents brittle failure during earthquakes",
+                "rc_typhoon": "Strong resistance to wind pressure and roof uplift from typhoons",
+                "rc_ash": "Capable of supporting heavy ash roof loads",
+                "rc_slope": "Performs better on slopes when well-anchored with slope protection measures",
+                "primary_structure": "Shear Walls (Preferred) - Improves rigidity for landslide-related movement, highly seismic and wind-resistant; flood-resistant if waterproofed",
+                "shear_walls_landslide": "Improves overall rigidity resisting movement from landslides",
+                "shear_walls_seismic": "Highly seismic-resistant providing lateral load capacity",
+                "shear_walls_wind": "Highly wind-resistant to typhoon forces",
+                "shear_walls_flood": "Flood-resistant when properly waterproofed",
+                "secondary_structure": "Load-Bearing Walls - Only safe when reinforced and supported by strong foundation; otherwise risky in strong shaking",
+                "secondary_material": "Fiber Cement Board - Lightweight for interior/upper walls; requires proper framing/bracing for wind and earthquakes"
+            },
+            "floor_systems": {
+                "primary_structure": "Suspended/Raised Floor - Elevation reduces flood impacts and helps avoid debris flows; performs well in quakes if lightweight; must be engineered with strong bracing/anchorage for typhoons",
+                "suspended_flood": "Elevation reduces flood impacts allowing water passage underneath",
+                "suspended_debris": "Helps avoid debris flows during flooding events",
+                "suspended_seismic": "Lightweight design provides good seismic performance",
+                "suspended_wind": "Must be engineered with strong bracing and anchorage for typhoon resistance",
+                "primary_material": "Steel-Reinforced Concrete Slab (Preferred) - Durable after flooding, ductile in earthquakes, non-combustible/easy to clean from ash, adds resistance to wind uplift when well tied-in",
+                "rcc_flood": "Durable after prolonged flooding without loss of structural integrity",
+                "rcc_seismic": "Ductile providing good earthquake performance",
+                "rcc_ash": "Non-combustible and easy to clean after ash fall",
+                "rcc_wind": "Adds resistance to wind uplift when well anchored",
+                "secondary_structure": "Composite Floor (Steel + Concrete) - Very good seismic/diaphragm action and moisture resistance but costly and detail-sensitive requiring corrosion protection",
+                "secondary_material": "Hollow Core Slab - Lighter but connection-dependent and weaker in strong earthquakes; corrosion concerns for prestressing steel in wet upland areas"
+            },
+            "foundation_systems": {
+                "primary_option_1": "Pier Foundation - Elevates above floodwater; reduces slope disturbance; piers can move independently in quakes; lowers erosion impacts; lets water/wind pass under",
+                "pier_flood": "Elevates above floodwater with good water passage underneath",
+                "pier_slope": "Reduces disturbance to unstable slopes",
+                "pier_seismic": "Independent pier action reduces differential settlement",
+                "pier_erosion": "Reduces erosion impacts through elevation",
+                "pier_wind": "Allows wind passage under structure reducing lateral pressure",
+                "primary_option_2": "Pile Foundation - Anchors below unstable surface soils (better for landslides), reduces differential settlement in earthquakes, strong against wind forces, supports ash loads",
+                "pile_landslide": "Deep anchorage below unstable surface soils provides excellent performance",
+                "pile_seismic": "Reduces differential settlement during earthquakes",
+                "pile_wind": "Strong resistance to uplift and lateral wind forces",
+                "pile_ash": "Supports heavy accumulated ash loads",
+                "primary_material": "Reinforced Concrete (Preferred) - Strong, ductile, reliable under flood + quake + wind; limits cracking from soil movement",
+                "rc_strength": "Strong and ductile under multiple hazard conditions",
+                "rc_reliability": "Reliable performance in floods, earthquakes, and wind",
+                "rc_cracking": "Limits cracking from soil movement and settlement",
+                "secondary_material": "Stone (Alternative) - Durable and strong in compression if well-bonded and drained; fire-resistant and carries vertical loads well"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof - Most wind-resistant for typhoons, drains rain effectively, stable in earthquakes, sheds ash to reduce overload",
+                "hip_wind": "Most wind-resistant to typhoon forces from all directions",
+                "hip_drainage": "Drains rain effectively in high-rainfall upland areas",
+                "hip_seismic": "Stable geometry during earthquake shaking",
+                "hip_ash": "Sheds ash effectively reducing overload on structure",
+                "primary_material": "Metal Roofing (Preferred) - Lightweight for earthquakes, strong in typhoons when properly fastened, sheds ash; coating helps resist corrosion",
+                "metal_seismic": "Lightweight reduces seismic mass and demands",
+                "metal_typhoon": "Strong in typhoons when properly fastened with adequate patterns",
+                "metal_ash": "Sheds ash effectively with smooth surface",
+                "metal_corrosion": "Coating helps resist corrosion in upland climate",
+                "secondary_structure": "Dutch Gable - Added cost/complexity; more joints result in higher leak and ash-trap risk unless detailed very well",
+                "secondary_material": "Clay Tiles - Too heavy for earthquake-prone areas and can become wind-borne debris unless fully secured"
+            },
+            "column_systems": {
+                "primary_option_1": "Composite Steel + Concrete Columns - Best overall balance providing ductility and durability, strong for ash loads while offering seismic and wind resistance",
+                "composite_balance": "Best overall balance of performance and durability",
+                "composite_ductility": "Provides ductility in earthquakes with composite action",
+                "composite_ash": "Strong capacity for accumulated ash loads",
+                "composite_wind": "Good wind resistance from combined materials",
+                "primary_option_2": "Circular Reinforced Concrete Columns - Economical and strong in all directions providing uniform strength",
+                "circular_economical": "Most economical option among strong systems",
+                "circular_strength": "Strong in all directions equally",
+                "circular_seismic": "Good earthquake performance with confinement",
+                "secondary_option": "Pile-Supported Stilt RCC System - Highest elevation and deep anchorage performance but costliest and needs strong bracing",
+                "stilt_elevation": "Highest elevation for flood protection",
+                "stilt_anchorage": "Deep anchorage provides stability",
+                "stilt_cost": "Most expensive option requiring strong lateral bracing"
+            },
+            "pros": [
+                "Full RC wall system provides water resistance, earthquake ductility, and wind resistance",
+                "Shear walls provide excellent rigidity for landslide-related movement",
+                "Suspended floors reduce flood impacts while providing lightweight earthquake performance",
+                "Steel-reinforced concrete slabs are durable, non-combustible, and easy to maintain after ash fall",
+                "Pier or pile foundations can be selected based on site-specific conditions",
+                "Hip roofs naturally shed water and ash while resisting typhoon winds",
+                "Metal roofing is lightweight yet durable and wind-resistant",
+                "Composite columns offer best balance of ductility and durability",
+                "Circular RC columns provide economical strong option with uniform strength",
+                "System comprehensively addresses all five major hazards"
+            ],
+            "cons": [
+                "Reinforced concrete construction has higher material and labor costs",
+                "Full RC wall systems are heavy requiring strong foundations",
+                "Suspended floors require strong bracing and careful engineering",
+                "Pier foundations less stable than piles under extreme landslide conditions",
+                "Pile foundations more expensive than pier alternatives",
+                "Metal roofing requires proper fastening patterns for typhoon resistance",
+                "Composite columns need corrosion protection for steel components",
+                "Circular RC columns occupy more space than square alternatives",
+                "Professional engineering consultation essential for slope stability",
+                "Complex construction requiring skilled workers and proper supervision"
+            ]
+        }
+    },
+    {
+        "name": "Villareal",
+        "types": ["rural", "upland"],
+        "description": "Upland agricultural barangay vulnerable to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons. Structural design must integrate flood resilience with landslide protection, seismic ductility, ash load capacity, and wind resistance through reinforced concrete systems and elevated platforms.",
+        "hazards": ["flood", "rain-landslide", "ground-shaking", "ashfall", "typhoon"],
+        "villareal_system": {
+            "systemName": "VILLAREAL - Multi-Hazard Resilient Agricultural Housing System",
+            "purpose": "Provide hazard-resilient structural design for upland agricultural communities exposed to flooding, rain-induced landslides, earthquakes, volcanic ash fall, and typhoons.",
+            "note": "This is a conceptual design/selection document. Final sizing, reinforcement, connections, and detailing must be done by a licensed civil/structural engineer following applicable codes.",
+            "design_approach": [
+                "Employ reinforced concrete walls with shear walls as primary lateral-force resisting elements for earthquakes, typhoons, and landslide movement",
+                "Implement elevated suspended floor systems to reduce flood impacts and debris flow damage while maintaining lightweight seismic performance",
+                "Select pile or pier foundations depending on site conditions to ensure deep stability or elevated protection against multiple hazards",
+                "Design hip roofs with metal roofing for comprehensive hazard resistance including wind, water drainage, ash shedding, and lightweight seismic behavior",
+                "Use composite or circular reinforced concrete columns with proper ductile detailing for reliable performance under combined hazard loading"
+            ],
+            "recommended_components": {
+                "walls": "Reinforced Concrete Wall System (RCW) with Shear Walls",
+                "floors": "Suspended Floor System with Steel-Reinforced Concrete Slab",
+                "foundation": "Pile or Pier Foundation with Reinforced Concrete",
+                "roof": "Hip Roof with Metal Roofing",
+                "columns": "Composite Steel + Concrete or Circular Reinforced Concrete Columns",
+                "structural_members": "Composite or Reinforced Concrete Beams with Continuous System Design"
+            },
+            "wall_systems": {
+                "primary_material": "Reinforced Concrete Wall (RCW) - Highly resistant to floods, earthquakes, typhoons, and ash loads; does not rot or easily deteriorate when submerged; steel reinforcement provides ductility during seismic events",
+                "rcw_flood": "Highly resistant to floods without rot or structural deterioration",
+                "rcw_seismic": "Steel reinforcement provides ductility during seismic events",
+                "rcw_typhoon": "Excellent resistance to typhoon wind pressures and roof uplift forces",
+                "rcw_ash": "Capable of supporting heavy volcanic ash loads on roof",
+                "primary_structure": "Shear Walls (Preferred) - Excellent resistance to lateral forces from earthquakes and strong winds; improves overall rigidity against landslide movement",
+                "shear_walls_lateral": "Excellent resistance to lateral forces from earthquakes and typhoons",
+                "shear_walls_landslide": "Improves overall rigidity against landslide-related movement",
+                "secondary_structure": "Load-Bearing Walls - Acceptable only when adequately reinforced with proper detailing",
+                "secondary_material": "Fiber Cement Board - Lightweight and durable; improves ventilation; reduces structural weight; requires proper framing for wind and earthquake safety",
+                "fiber_ventilation": "Improves natural ventilation in high-rainfall areas",
+                "fiber_lightweight": "Reduces overall structural weight benefiting seismic performance"
+            },
+            "floor_systems": {
+                "primary_structure": "Suspended Floor System - Elevated above ground to protect against flooding; performs well during earthquakes due to flexibility; maintains habitability during and after disasters",
+                "suspended_flood": "Elevated above ground protecting against flooding and debris flows",
+                "suspended_seismic": "Performs well during earthquakes due to flexibility and reduced mass",
+                "suspended_habitability": "Maintains occupant safety and habitability during disaster events",
+                "primary_material": "Steel-Reinforced Concrete Slab - Water-resistant and durable; good seismic performance; can support heavy ash loads",
+                "rcc_water": "Water-resistant and durable after prolonged flooding",
+                "rcc_seismic": "Good seismic performance with ductile reinforcement",
+                "rcc_ash": "Can support heavy accumulated ash loads on roof structure",
+                "secondary_structure": "Composite Floor System (Steel + Concrete) - Strong and ductile but costly and technically demanding; requires skilled workers",
+                "secondary_material": "Hollow Core Slab - Lightweight but weaker against earthquakes; dependent on connection strength; requires careful detailing"
+            },
+            "foundation_systems": {
+                "primary_option_1": "Pile Foundation (Preferred) - Transfers loads to deep stable soil layers; effective against floods, landslides, and ground shaking; provides best protection for slope instability",
+                "pile_depth": "Transfers loads to deep stable soil layers below unstable surface",
+                "pile_flood": "Effective protection against floods with elevation benefits",
+                "pile_landslide": "Excellent performance against landslides through deep anchorage",
+                "pile_seismic": "Effective against ground shaking through deep stability",
+                "primary_option_2": "Pier Foundation - Elevates the structure and minimizes soil disturbance; reduces flood and erosion damage; simpler construction than piles",
+                "pier_elevation": "Elevates structure above potential floodwaters",
+                "pier_erosion": "Reduces erosion damage through elevation and minimal soil disturbance",
+                "pier_construction": "Simpler construction than pile alternatives",
+                "primary_material": "Reinforced Concrete - High strength and crack resistance; reliable under all identified hazards; provides durability in wet upland climate",
+                "rc_strength": "High strength and crack resistance under combined loading",
+                "rc_reliability": "Reliable under all identified hazards including floods and earthquakes",
+                "rc_durability": "Provides durability in wet upland climate with proper detailing",
+                "secondary_material": "Stone - Durable and fire-resistant; less effective during strong earthquakes; limited use for support structures"
+            },
+            "roof_systems": {
+                "primary_structure": "Hip Roof (Preferred) - Excellent wind resistance during typhoons; balanced shape improves earthquake performance; efficient drainage for rain and ash",
+                "hip_wind": "Excellent wind resistance during typhoons from all directions",
+                "hip_earthquake": "Balanced shape improves earthquake performance and stability",
+                "hip_drainage": "Efficient drainage for rain and ash accumulation",
+                "primary_material": "Metal Roofing - Lightweight and fire-resistant; reduces earthquake forces and wind uplift; smooth surface allows ash and rain runoff",
+                "metal_weight": "Lightweight reducing seismic demands on structure",
+                "metal_wind": "Fire-resistant with good fastening patterns for typhoon forces",
+                "metal_ashfall": "Smooth surface allows effective ash and rain runoff",
+                "secondary_structure": "Dutch Gable Roof - Provides additional space but more complex and leak-prone; higher maintenance requirements",
+                "secondary_material": "Clay Roof Tiles - Too heavy for earthquake-prone areas; risk of becoming debris during typhoons; not recommended for multi-hazard areas"
+            },
+            "column_systems": {
+                "best_overall": "Composite Columns (Steel + Concrete) - High strength and ductility; excellent resistance to earthquakes, typhoons, floods, and ash loads; best performance across all hazards",
+                "composite_strength": "High strength and ductility in all directions",
+                "composite_earthquake": "Excellent resistance to earthquake forces with composite action",
+                "composite_typhoon": "Excellent resistance to typhoon wind pressures and lateral forces",
+                "composite_flood": "Excellent resistance to flood forces and water pressure",
+                "cost_effective": "Circular Reinforced Concrete Columns - Uniform stress distribution; good resistance to lateral forces; economical option with reliable performance",
+                "circular_stress": "Uniform stress distribution in all directions",
+                "circular_lateral": "Good resistance to lateral forces from earthquakes and wind",
+                "circular_economy": "Cost-effective option compared to composite alternatives",
+                "most_resilient": "Pile-Supported RCC Columns - Best performance against floods, storm surge, and extreme events; highest cost and complexity; maximum elevation benefit",
+                "pile_column_flood": "Best performance against floods with maximum elevation",
+                "pile_column_stability": "Maximum anchorage and stability in extreme landslide conditions",
+                "pile_column_cost": "Highest cost and construction complexity"
+            },
+            "beam_systems": {
+                "best_overall": "Composite Beams (Steel + Concrete) - Strong and ductile; performs well under earthquakes, strong winds, and heavy loads; excellent seismic detailing capacity",
+                "composite_strength": "Strong and ductile with excellent load capacity",
+                "composite_seismic": "Performs well under earthquakes with ductile deformation",
+                "composite_wind": "Performs well under strong typhoon wind forces",
+                "general_purpose": "Reinforced Concrete Beams - Durable and fire-resistant; requires proper seismic detailing for reliability; cost-effective alternative",
+                "rc_durability": "Durable and fire-resistant in upland climate",
+                "rc_seismic": "Requires proper seismic detailing for earthquake performance",
+                "rc_cost": "Cost-effective alternative to composite beams",
+                "best_system": "Continuous Beam System - Load redistribution improves redundancy; reduces risk of progressive collapse during disasters; provides ductile load paths",
+                "continuous_redundancy": "Load redistribution improves structural redundancy",
+                "continuous_collapse": "Reduces risk of progressive collapse during earthquakes",
+                "continuous_ductility": "Provides ductile load paths for energy dissipation"
+            },
+            "pros": [
+                "Reinforced concrete wall systems provide water resistance, earthquake ductility, and typhoon strength",
+                "Shear walls provide excellent rigidity and resistance to landslide-related movement",
+                "Suspended elevated floors reduce flood impacts and debris flow damage",
+                "Steel-reinforced concrete slabs are water-resistant and can support heavy ash loads",
+                "Pile foundations provide deep stability for slope protection and long-term reliability",
+                "Pier foundations offer simpler elevated alternative for flood-prone areas",
+                "Hip roofs naturally shed water, wind forces, and ash while resisting typhoons",
+                "Metal roofing is lightweight, fire-resistant, and allows effective ash runoff",
+                "Composite or circular columns provide reliable strength across all hazard conditions",
+                "Continuous beam systems reduce collapse risk through load redistribution"
+            ],
+            "cons": [
+                "Reinforced concrete construction has higher upfront material and labor costs",
+                "Full RC wall systems are heavy requiring strong foundations",
+                "Suspended floors require careful engineering and strong bracing for typhoon winds",
+                "Pile foundations are significantly more expensive than conventional footings",
+                "Pier foundations less stable than piles under extreme landslide conditions",
+                "Composite materials require skilled workers and careful connection detailing",
+                "Metal roofing requires specific fastening patterns for typhoon resistance",
+                "Circular RC columns occupy more floor space than rectangular alternatives",
+                "Professional structural engineering consultation is essential for site-specific design",
+                "Construction quality control critical for disaster resilience performance"
+            ]
+        }
+    }
+]

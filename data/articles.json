@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "title": "Stop Panic Before It Starts: How to Spot Reliable Information During Emergencies",
+    "category": "Feature",
+    "author": "by Bernadette Bolso",
+    "date": "Jan 25, 2026",
+    "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "When disasters strike, information travels faster than the storm itself.",
+    "fullContent": "<p>When disasters strike, information travels faster than the storm itself. Phones buzz, social media explodes, and messages fly through chat groups. Some of it is helpful, some is confusing, and some can be downright dangerous. Knowing what information to trust is just as important as knowing where to go or what to do.</p><h2>The Information Overload During Disasters</h2><p>During natural disasters, residents are bombarded with information from multiple sources—official government channels, news outlets, social media, messaging apps, and word-of-mouth. This information comes at rapid speed, making it difficult to discern facts from rumors or panic-inducing misinformation. The challenge intensifies when people are under stress and making critical safety decisions in limited time.</p><h2>Key Principles for Verifying Information</h2><h3>1. Check the Source</h3><p>Always verify where information is coming from. Reliable sources include official government agencies (LGU, PAGASA, PHIVOLCS), recognized news organizations, and established disaster management organizations. Be cautious with information from unknown social media accounts or unverified personal posts.</p><h3>2. Cross-Reference Multiple Sources</h3><p>Don't rely on a single source. If multiple trusted sources report the same information, it's likely accurate. Check official government websites, recognized news outlets, and established disaster response organizations for consistency.</p><h3>3. Distinguish Between Official Alerts and Rumors</h3><p>Official disaster alerts come through specific channels (PAGASA weather warnings, PHIVOLCS volcanic alerts, LGU announcements). These are released through official media, emergency broadcast systems, and verified social media accounts of government agencies. Be wary of \"warnings\" that come through unofficial channels.</p><h3>4. Look for Specific Details</h3><p>Reliable information provides specific details such as exact locations, times, measurements, and official sources. Vague warnings like \"stay away from the coast\" without specifics are less helpful than \"Evacuation order for coastal barangays Ariman through Rizal due to storm surge warning.\"</p><h2>What to Do During Information Overload</h2><p>In a disaster situation, focus on official channels for safety-critical decisions. Listen to local government radio broadcasts, check official social media accounts of disaster agencies, and ask trusted community leaders for information. When in doubt, use the most conservative approach to protect your family.</p>"
+  },
+  {
+    "id": 1,
+    "title": "Community-Based Approaches: Disaster Readiness and Interventions",
+    "category": "HOW TO",
+    "author": "by Arien Azel San Juan",
+    "date": "Jan 18, 2026",
+    "image": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "Communities are becoming increasingly vulnerable to natural disasters.",
+    "fullContent": "<p>Communities are becoming increasingly vulnerable to natural disasters, mainly due to their geographical areas, disaster preparedness, and inability to access appropriate housing designs. This vulnerability has affected thousands of families, prompting organizations and government agencies to initiate projects such as guides and tips for reducing the impacts of natural disasters.</p><h2>Understanding Community Vulnerability</h2><p>Community vulnerability to disasters stems from three main factors: geographical location (proximity to hazards), preparedness level (how well-prepared the community is), and housing adequacy (whether homes can withstand hazard impacts). In areas like Gubat with multiple hazards, these factors compound to increase risk.</p><h2>Building Community Resilience</h2><h3>1. Disaster Preparedness Planning</h3><p>Communities should develop comprehensive disaster preparedness plans that include evacuation routes, shelter locations, communication systems, and supply stockpiles. These plans should be regularly reviewed, updated, and practiced through community drills.</p><h3>2. Housing and Infrastructure Improvement</h3><p>Improving housing standards to meet resilience criteria is essential. Communities can advocate for better building codes, provide technical assistance for retrofitting, and support residents in constructing hazard-resistant homes using appropriate materials and design.</p><h3>3. Community Education and Awareness</h3><p>Regular educational programs about specific hazards, protective actions, and available resources empower community members to make informed decisions. Local workshops on construction techniques, evacuation procedures, and emergency response build community capacity.</p><h2>Role of Community Leaders and Organizations</h2><p>Barangay officials, community organizations, and local leaders play crucial roles in coordinating preparedness activities, disseminating information, and ensuring vulnerable groups receive support. Strong community leadership strengthens disaster resilience at the grassroots level.</p>"
+  },
+  {
+    "id": 2,
+    "title": "Flood Damage to Foundations",
+    "category": "Flooding",
+    "author": "by Gubat Resilient Housing Team",
+    "date": "Jan 10, 2026",
+    "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "Water weakens soil and damages concrete.",
+    "fullContent": "<p>Water is one of the most destructive forces acting on building foundations. Prolonged exposure to floodwaters causes soil erosion, reduces bearing capacity, and deteriorates concrete through chemical attack and mechanical damage. Understanding these mechanisms is critical for designing resilient foundations in flood-prone areas.</p><h2>How Water Damages Foundations</h2><h3>Soil Weakening</h3><p>Floodwater saturates soil, reducing its bearing capacity. The water pressure acts on the foundation sides, potentially causing outward movement or tilting. Prolonged saturation can lead to soil liquefaction in earthquake scenarios, creating additional instability.</p><h3>Concrete Deterioration</h3><p>Water chemically attacks concrete through several mechanisms: leaching of cement compounds, sulfate attack (if water contains sulfates), and acid attack (if water is acidic or contains decomposing organic material). This deterioration weakens the concrete structure over time.</p><h3>Scour and Erosion</h3><p>Moving floodwater causes erosion around foundations, potentially undercutting support. Debris impact can damage foundation surfaces and expose reinforcement to corrosion.</p><h2>Foundation Solutions for Flood-Prone Areas</h2><h3>Pile Foundations</h3><p>Deep pile foundations transfer loads to stable soil layers below flood-prone zones. Piles remain stable even when surrounding soil is saturated or eroded. This is the recommended solution for areas with high flood risk.</p><h3>Elevated Foundations</h3><p>Elevating structures above the anticipated flood level minimizes water exposure. Pile or stilt foundations support the elevated structure while allowing floodwater to flow beneath without resistance.</p><h3>Waterproofing and Protection</h3><p>For conventional foundations, waterproofing materials and protective coatings reduce water penetration. Proper drainage systems around the foundation direct water away from the structure, reducing saturation and erosion risk.</p><h2>Best Practices</h2><ul><li>Conduct soil testing to determine bearing capacity and flood depth requirements</li><li>Design foundations to accommodate expected flood levels plus a safety margin</li><li>Use corrosion-resistant reinforcement in flood-prone zones</li><li>Implement proper drainage and waterproofing systems</li><li>Consider pile foundations for maximum resilience in high-risk areas</li></ul>"
+  },
+  {
+    "id": 3,
+    "title": "Typhoon-Resistant Roofing: Design and Material Choices",
+    "category": "HOW TO",
+    "author": "by Gubat Resilient Housing Team",
+    "date": "Jan 5, 2026",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "Strong winds and flying debris during typhoons pose serious threats to roofs.",
+    "fullContent": "<p>In typhoon-prone areas like Gubat, roofs are often the first structural elements to fail. High winds create uplift forces that can tear roofing materials from their anchors. Flying debris causes punctures and structural damage. Proper design and material selection can significantly improve roof resilience.</p><h2>Understanding Wind Forces</h2><p>Typhoon winds create both lateral pressure and uplift forces on roofs. Roof edges, ridges, and corners experience the highest wind loads. Hip roofs generally perform better than gable roofs because they have fewer exposed edges and distribute wind loads more evenly.</p><h2>Key Design Considerations</h2><h3>Roof Shape</h3><p>Hip roofs with slopes between 25 and 35 degrees offer good wind resistance. Steeper slopes increase wind uplift; flatter slopes may accumulate water. Avoid large roof overhangs that can catch wind.</p><h3>Anchoring and Fastening</h3><p>Proper fastener spacing and type are critical. Use ring-shank nails or screws rated for high wind zones. Ensure adequate connection between roof framing and wall structure.</p><h2>Recommended Materials</h2><p>Metal roofing (properly anchored) offers good wind resistance. Concrete or clay tiles must be well-secured. Consider impact-resistant materials in debris-prone areas.</p>"
+  },
+  {
+    "id": 4,
+    "title": "Landslide-Prone Areas: Site Assessment and Foundation Options",
+    "category": "Hazards",
+    "author": "by Gubat Resilient Housing Team",
+    "date": "Dec 28, 2025",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "Upland areas in Gubat face landslide risks from heavy rainfall and earthquakes.",
+    "fullContent": "<p>Many barangays in Gubat's upland areas are susceptible to rainfall-induced and earthquake-triggered landslides. Building in these areas requires careful site assessment and appropriate foundation design to ensure long-term stability.</p><h2>Identifying Landslide Risk</h2><p>Steep slopes, proximity to natural drainage paths, and areas with history of slope failures indicate higher risk. Geological surveys and slope stability assessments should precede construction in upland areas.</p><h2>Foundation Strategies</h2><p>Deep foundations that extend to stable bedrock provide the best resistance. Retaining walls and proper drainage systems can reduce soil saturation that triggers landslides. Avoid cut-and-fill operations that destabilize slopes.</p>"
+  },
+  {
+    "id": 5,
+    "title": "Corrosion-Resistant Materials for Coastal Construction",
+    "category": "Feature",
+    "author": "by Gubat Resilient Housing Team",
+    "date": "Dec 20, 2025",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "excerpt": "Salt air and moisture accelerate corrosion of metal components.",
+    "fullContent": "<p>Coastal barangays in Gubat face accelerated corrosion from salt spray and high humidity. Metal fasteners, reinforcements, and structural elements require special consideration to ensure durability.</p><h2>Corrosion Mechanisms</h2><p>Salt deposits from sea spray create electrolytes that accelerate galvanic corrosion. Moisture enables oxygen to reach metal surfaces. The combination dramatically shortens the lifespan of unprotected steel.</p><h2>Material Choices</h2><p>Hot-dip galvanized steel provides sacrificial zinc coating. Stainless steel (especially marine-grade) resists corrosion but costs more. Epoxy-coated reinforcement offers protection for concrete structures. Proper detailing to prevent water accumulation extends component life.</p>"
+  }
+]
